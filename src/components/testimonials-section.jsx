@@ -4,6 +4,7 @@ import React from "react";
 import { Badge } from "./ui/badge";
 import { FadeUp } from "./ui/motion";
 import { CircularTestimonials } from "./ui/circular-testimonials";
+import { motion } from "framer-motion";
 
 const testimonials = [
   {
@@ -44,9 +45,14 @@ export function TestimonialsSection() {
           <Badge variant="outline" className="mb-3 rounded-full">
             06 // CLIENT FEEDBACK
           </Badge>
-          <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tight text-zinc-950 dark:text-white">
+          <motion.h2
+            initial={{ clipPath: "inset(0 0 100% 0)", y: 20 }}
+            whileInView={{ clipPath: "inset(0 0 0% 0)", y: 0 }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            className="text-3xl md:text-5xl font-bold uppercase tracking-tight text-zinc-950 dark:text-white"
+          >
             TESTIMONIALS &amp; ENDORSEMENTS
-          </h2>
+          </motion.h2>
           <div className="h-1 w-24 bg-[#88a725] mx-auto mt-4 rounded-full" />
         </FadeUp>
 

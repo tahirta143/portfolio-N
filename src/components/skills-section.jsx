@@ -45,9 +45,14 @@ export function SkillsSection() {
           <Badge variant="outline" className="mb-3 rounded-full">
             05 // ENGINEERING STANDARDS
           </Badge>
-          <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tight text-zinc-950 dark:text-white">
+          <motion.h2
+            initial={{ clipPath: "inset(0 0 100% 0)", y: 20 }}
+            whileInView={{ clipPath: "inset(0 0 0% 0)", y: 0 }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            className="text-3xl md:text-5xl font-bold uppercase tracking-tight text-zinc-950 dark:text-white"
+          >
             CORE TECHNICAL HIGHLIGHTS
-          </h2>
+          </motion.h2>
           <p className="text-zinc-600 dark:text-zinc-400 font-sans text-sm mt-2 font-light max-w-xl">
             Architectural principles and technical standards applied across every client project.
           </p>

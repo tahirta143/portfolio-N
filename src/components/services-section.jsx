@@ -48,23 +48,31 @@ const services = [
 
 export function ServicesSection() {
   return (
-    <section id="services" className="py-28 bg-white dark:bg-black text-zinc-900 dark:text-zinc-100 border-t border-[#88a725]/20 relative transition-colors duration-300">
+    <section
+      id="services"
+      className="py-28 bg-white dark:bg-black text-zinc-900 dark:text-zinc-100 border-t border-[#88a725]/20 relative transition-colors duration-300"
+    >
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Section Header */}
         <FadeUp className="mb-16">
           <Badge variant="outline" className="mb-3 rounded-full">
             04 // CORE CAPABILITIES
           </Badge>
-          <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tight text-zinc-950 dark:text-white">
-            SERVICES & EXPERTISE
-          </h2>
+          <motion.h2
+            initial={{ clipPath: "inset(0 0 100% 0)", y: 20 }}
+            whileInView={{ clipPath: "inset(0 0 0% 0)", y: 0 }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            className="text-3xl md:text-5xl font-bold uppercase tracking-tight text-zinc-950 dark:text-white"
+          >
+            SERVICES &amp; EXPERTISE
+          </motion.h2>
           <p className="text-zinc-600 dark:text-zinc-400 font-sans text-sm mt-2 font-light max-w-xl">
             Hover over any card to experience the green spotlight glow effect.
           </p>
           <div className="h-1 w-24 bg-[#88a725] mt-4 rounded-full" />
         </FadeUp>
 
-        {/* Services Grid with iOS GlowHoverCard Tiles */}
+        {/* Services Grid with GlowHoverCard Tiles */}
         <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => {
             const IconComponent = service.icon;

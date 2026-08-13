@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { Badge } from "./ui/badge";
 import { ElasticGallery } from "./ui/elastic-gallery";
 import { FadeUp } from "./ui/motion";
+import { motion } from "framer-motion";
 
 const projects = [
   {
@@ -110,9 +111,14 @@ export function ProjectsSection() {
             <Badge variant="outline" className="mb-3 rounded-full">
               03 // ELASTIC ACCORDION SHOWCASE
             </Badge>
-            <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tight text-zinc-950 dark:text-white">
+            <motion.h2
+              initial={{ clipPath: "inset(0 0 100% 0)", y: 20 }}
+              whileInView={{ clipPath: "inset(0 0 0% 0)", y: 0 }}
+              transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+              className="text-3xl md:text-5xl font-bold uppercase tracking-tight text-zinc-950 dark:text-white"
+            >
               PROJECT ARCHIVE &amp; CASE STUDIES
-            </h2>
+            </motion.h2>
             <p className="text-zinc-600 dark:text-zinc-400 font-sans text-sm mt-2 font-light">
               Hover any panel to expand — details, tech stack, and links reveal on focus.
             </p>

@@ -110,7 +110,11 @@ export function AboutSection() {
   }, [activeStep]);
 
   return (
-    <section id="about" ref={targetRef} className="relative h-[380vh] bg-white dark:bg-black text-zinc-900 dark:text-zinc-100 transition-colors duration-300">
+    <section
+      id="about"
+      ref={targetRef}
+      className="relative h-[380vh] bg-white dark:bg-black text-zinc-900 dark:text-zinc-100 transition-colors duration-300"
+    >
       {/* Sticky viewport frame */}
       <div className="sticky top-0 flex h-screen items-center overflow-hidden border-t border-[#88a725]/20">
         
@@ -142,9 +146,15 @@ export function AboutSection() {
                 <Badge variant="outline" className="mb-2.5 rounded-full">
                   01 // ARCHITECTURE & VISION
                 </Badge>
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold uppercase tracking-tight text-zinc-950 dark:text-white">
+                {/* Text Animation Mask Wipe */}
+                <motion.h2
+                  initial={{ clipPath: "inset(0 0 100% 0)", y: 20 }}
+                  whileInView={{ clipPath: "inset(0 0 0% 0)", y: 0 }}
+                  transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+                  className="text-3xl sm:text-4xl md:text-5xl font-bold uppercase tracking-tight text-zinc-950 dark:text-white"
+                >
                   ENGINEERING MEMOIR &amp; PHILOSOPHY
-                </h2>
+                </motion.h2>
                 <div className="h-1 w-24 bg-[#88a725] mt-2.5 rounded-full" />
               </div>
 
@@ -168,9 +178,14 @@ export function AboutSection() {
 
                 {/* Bio & Core Highlights Grid */}
                 <div className="lg:col-span-7 space-y-4">
-                  <h3 className="text-xl md:text-2xl font-bold uppercase text-zinc-950 dark:text-white leading-tight">
+                  <motion.h3
+                    initial={{ clipPath: "inset(0 0 100% 0)", y: 15 }}
+                    whileInView={{ clipPath: "inset(0 0 0% 0)", y: 0 }}
+                    transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+                    className="text-xl md:text-2xl font-bold uppercase text-zinc-950 dark:text-white leading-tight"
+                  >
                     BUILDING SCALABLE INTERFACES WITH UNCOMPROMISING MOTION QUALITY
-                  </h3>
+                  </motion.h3>
                   <p className="text-zinc-600 dark:text-zinc-400 font-sans text-xs md:text-sm leading-relaxed font-light">
                     Senior Frontend Engineer with 8+ years engineering high-throughput web applications, design systems, and rich interactive web experiences using React, Next.js, Framer Motion, and Tailwind CSS.
                   </p>
@@ -205,16 +220,21 @@ export function AboutSection() {
             </div>
           </div>
 
-          {/* ── PANEL 2: SKILLS & TECH STACK (HORIZONTAL SCROLL) ── */}
+          {/* ── PANEL 2: SKILLS & TECH STACK ── */}
           <div className="w-[100vw] h-full flex flex-col justify-center px-6 md:px-16 shrink-0 border-l border-[#88a725]/15">
             <div className="max-w-6xl mx-auto w-full space-y-6 pt-10">
               <div>
                 <Badge variant="outline" className="mb-3 rounded-full">
                   01 // TECHNICAL MATRIX
                 </Badge>
-                <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold uppercase tracking-tight text-zinc-950 dark:text-white">
+                <motion.h2
+                  initial={{ clipPath: "inset(0 0 100% 0)" }}
+                  whileInView={{ clipPath: "inset(0 0 0% 0)" }}
+                  transition={{ duration: 0.8, ease: "easeOut" }}
+                  className="text-3xl sm:text-5xl md:text-6xl font-bold uppercase tracking-tight text-zinc-950 dark:text-white"
+                >
                   SKILLS &amp; TECH STACK
-                </h2>
+                </motion.h2>
                 <div className="h-1 w-24 bg-[#88a725] mt-3 rounded-full" />
               </div>
 
@@ -273,16 +293,21 @@ export function AboutSection() {
             </div>
           </div>
 
-          {/* ── PANEL 3 (FINAL PANEL): Impact & Metric Counters ── */}
+          {/* ── PANEL 3: Impact & Metric Counters ── */}
           <div className="w-[100vw] h-full flex flex-col justify-center px-6 md:px-16 shrink-0 border-l border-[#88a725]/15">
             <div className="max-w-6xl mx-auto w-full space-y-8 pt-10">
               <div>
                 <Badge variant="outline" className="mb-3 rounded-full">
                   01 // IMPACT & METRICS
                 </Badge>
-                <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold uppercase tracking-tight text-zinc-950 dark:text-white">
+                <motion.h2
+                  initial={{ clipPath: "inset(0 0 100% 0)" }}
+                  whileInView={{ clipPath: "inset(0 0 0% 0)" }}
+                  transition={{ duration: 0.8, ease: "easeOut" }}
+                  className="text-3xl sm:text-5xl md:text-6xl font-bold uppercase tracking-tight text-zinc-950 dark:text-white"
+                >
                   PROVEN RECORD &amp; NUMBERS
-                </h2>
+                </motion.h2>
                 <p className="text-zinc-600 dark:text-zinc-400 font-sans text-sm mt-1 font-light">
                   Measurable engineering metrics built over 8+ years of production delivery.
                 </p>

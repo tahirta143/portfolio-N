@@ -67,14 +67,24 @@ export function ExperienceSection() {
   const [viewMode, setViewMode] = useState("stack");
 
   return (
-    <section id="experience" className="py-28 bg-white dark:bg-black text-zinc-900 dark:text-zinc-100 border-t border-[#88a725]/20 relative transition-colors duration-300">
+    <section
+      id="experience"
+      className="py-28 bg-white dark:bg-black text-zinc-900 dark:text-zinc-100 border-t border-[#88a725]/20 relative transition-colors duration-300"
+    >
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <FadeUp className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div>
-            <Badge variant="outline" className="mb-3 rounded-full">02 // CAREER TIMELINE & STACK</Badge>
-            <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tight text-zinc-950 dark:text-white">
+            <Badge variant="outline" className="mb-3 rounded-full">
+              02 // CAREER TIMELINE &amp; STACK
+            </Badge>
+            <motion.h2
+              initial={{ clipPath: "inset(0 0 100% 0)", y: 20 }}
+              whileInView={{ clipPath: "inset(0 0 0% 0)", y: 0 }}
+              transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+              className="text-3xl md:text-5xl font-bold uppercase tracking-tight text-zinc-950 dark:text-white"
+            >
               PROFESSIONAL EXPERIENCE
-            </h2>
+            </motion.h2>
             <p className="text-zinc-600 dark:text-zinc-400 font-sans text-sm mt-2 font-light">
               Interactive Scrollable Card Stack — snap-scroll or use keyboard arrow keys to navigate.
             </p>
@@ -84,12 +94,24 @@ export function ExperienceSection() {
           <div className="ios-segmented-control flex items-center">
             <button
               onClick={() => setViewMode("stack")}
-              className={`px-5 py-2 text-xs font-bold uppercase tracking-wider transition-all duration-300 cursor-pointer rounded-full ${viewMode === "stack" ? "bg-[#88a725] text-white shadow-sm" : "text-zinc-700 dark:text-zinc-300 hover:text-black dark:hover:text-white"}`}
-            >Stacked View</button>
+              className={`px-5 py-2 text-xs font-bold uppercase tracking-wider transition-all duration-300 cursor-pointer rounded-full ${
+                viewMode === "stack"
+                  ? "bg-[#88a725] text-white shadow-sm"
+                  : "text-zinc-700 dark:text-zinc-300 hover:text-black dark:hover:text-white"
+              }`}
+            >
+              Stacked View
+            </button>
             <button
               onClick={() => setViewMode("grid")}
-              className={`px-5 py-2 text-xs font-bold uppercase tracking-wider transition-all duration-300 cursor-pointer rounded-full ${viewMode === "grid" ? "bg-[#88a725] text-white shadow-sm" : "text-zinc-700 dark:text-zinc-300 hover:text-black dark:hover:text-white"}`}
-            >List View</button>
+              className={`px-5 py-2 text-xs font-bold uppercase tracking-wider transition-all duration-300 cursor-pointer rounded-full ${
+                viewMode === "grid"
+                  ? "bg-[#88a725] text-white shadow-sm"
+                  : "text-zinc-700 dark:text-zinc-300 hover:text-black dark:hover:text-white"
+              }`}
+            >
+              List View
+            </button>
           </div>
         </FadeUp>
 
@@ -98,18 +120,32 @@ export function ExperienceSection() {
         ) : (
           <StaggerContainer className="space-y-8 max-w-4xl mx-auto">
             {experiences.map((exp, index) => (
-              <motion.div key={index} variants={motionItem} className="p-8 border border-[#88a725]/20 bg-white/80 dark:bg-black/80 backdrop-blur-2xl space-y-4 rounded-[32px]">
+              <motion.div
+                key={index}
+                variants={motionItem}
+                className="p-8 border border-[#88a725]/20 bg-white/80 dark:bg-black/80 backdrop-blur-2xl space-y-4 rounded-[32px]"
+              >
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-[#88a725]/10 pb-4">
                   <div>
-                    <h3 className="text-2xl font-bold uppercase text-zinc-950 dark:text-white">{exp.role}</h3>
-                    <p className="text-sm text-zinc-600 dark:text-zinc-400 font-sans">{exp.company} • {exp.location}</p>
+                    <h3 className="text-2xl font-bold uppercase text-zinc-950 dark:text-white">
+                      {exp.role}
+                    </h3>
+                    <p className="text-sm text-zinc-600 dark:text-zinc-400 font-sans">
+                      {exp.company} • {exp.location}
+                    </p>
                   </div>
-                  <span className="text-xs font-semibold uppercase px-3.5 py-1 bg-[#88a725] text-white rounded-full self-start">{exp.period}</span>
+                  <span className="text-xs font-semibold uppercase px-3.5 py-1 bg-[#88a725] text-white rounded-full self-start">
+                    {exp.period}
+                  </span>
                 </div>
-                <p className="text-sm text-zinc-700 dark:text-zinc-300 font-sans leading-relaxed">{exp.description}</p>
+                <p className="text-sm text-zinc-700 dark:text-zinc-300 font-sans leading-relaxed">
+                  {exp.description}
+                </p>
                 <div className="flex flex-wrap gap-2 pt-2 border-t border-[#88a725]/10">
                   {exp.skills.map((s, idx) => (
-                    <Badge key={idx} variant="secondary" className="text-[11px]">{s}</Badge>
+                    <Badge key={idx} variant="secondary" className="text-[11px]">
+                      {s}
+                    </Badge>
                   ))}
                 </div>
               </motion.div>

@@ -40,7 +40,7 @@ export default function Home() {
             {/* 1. Hero Section */}
             <HeroSection />
 
-            {/* 2. About Section (Includes Skills & Tech Stack in Panel 2 horizontal scroll) */}
+            {/* 2. About Section */}
             <AboutSection />
 
             {/* 3. Experience Section */}

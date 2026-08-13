@@ -31,11 +31,10 @@ export function Navbar() {
   return (
     <header className="fixed top-4 left-0 right-0 z-50 px-4 md:px-8 transition-all duration-300">
       <div
-        className={`max-w-7xl mx-auto px-6 py-3 rounded-full transition-all duration-300 border backdrop-blur-3xl flex items-center justify-between ${
-          scrolled
+        className={`max-w-7xl mx-auto px-6 py-3 rounded-full transition-all duration-300 border backdrop-blur-3xl flex items-center justify-between ${scrolled
             ? "bg-white/80 dark:bg-black/80 border-[#88a725]/30 shadow-sm"
             : "bg-white/60 dark:bg-black/60 border-white/40 dark:border-white/10"
-        }`}
+          }`}
       >
         {/* iOS Logo Badge */}
         <a href="#hero" className="flex items-center gap-2.5 group cursor-pointer">
