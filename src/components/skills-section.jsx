@@ -9,27 +9,27 @@ import { FadeUp, StaggerContainer, motionItem } from "./ui/motion";
 const highlights = [
   {
     icon: Code2,
-    title: "Next.js & SSR Architecture",
+    title: "GoHighLevel & CRM Platforms",
     description:
-      "Expertise in Next.js App Router, Server Actions, Edge Runtime, ISR caching, and hybrid rendering strategies for sub-second page delivery.",
+      "Deep expertise across GoHighLevel, ClickFunnels and WordPress — full account structure, subaccount setup, snapshot development and white-label / SaaS configuration.",
   },
   {
     icon: Cpu,
-    title: "Design Systems & Token Standards",
+    title: "Automation Platforms",
     description:
-      "Architecting modular, atomic design systems with Tailwind CSS, Framer Motion, and accessible WAI-ARIA primitives for scalable team workflows.",
+      "Building reliable automations with Make, N8N, Zapier and Webhooks to connect GHL with third-party tools, payment gateways and business platforms.",
   },
   {
     icon: Sparkles,
-    title: "UI Motion & Micro-Interactions",
+    title: "Communication & Payments",
     description:
-      "Crafting 60fps physics-based animations, scroll-driven transitions, and interactive canvas primitives that enchant users without layout shift.",
+      "Configuring Twilio, LC Phone, LC Email, Google Calendar, Stripe and PayPal for seamless customer communication and checkout experiences.",
   },
   {
     icon: ShieldCheck,
-    title: "Engineering Standards & Rigor",
+    title: "Deliverability & Tracking",
     description:
-      "Enforcing clean code practices, zero Lighthouse performance regression, automated CI/CD deployment pipelines, and thorough unit/E2E test suites.",
+      "Optimizing email infrastructure with SPF, DKIM, DMARC and domain authentication, plus Google Analytics, Search Console and Facebook Pixel tracking setup.",
   },
 ];
 
@@ -37,13 +37,13 @@ export function SkillsSection() {
   return (
     <section
       id="skills"
-      className="py-28 bg-white dark:bg-black text-zinc-900 dark:text-zinc-100 border-t border-[#88a725]/20 relative transition-colors duration-300"
+      className="py-28 bg-white dark:bg-black text-zinc-900 dark:text-zinc-100 border-t border-[#0A66C2]/20 relative transition-colors duration-300"
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Section Header */}
         <FadeUp className="mb-16">
           <Badge variant="outline" className="mb-3 rounded-full">
-            05 // ENGINEERING STANDARDS
+            05 // TOOLS &amp; TECHNOLOGIES
           </Badge>
           <motion.h2
             initial={{ clipPath: "inset(0 0 100% 0)", y: 20 }}
@@ -51,12 +51,12 @@ export function SkillsSection() {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="text-3xl md:text-5xl font-bold uppercase tracking-tight text-zinc-950 dark:text-white"
           >
-            CORE TECHNICAL HIGHLIGHTS
+            A TOOLKIT BUILT FOR AUTOMATED GROWTH
           </motion.h2>
           <p className="text-zinc-600 dark:text-zinc-400 font-sans text-sm mt-2 font-light max-w-xl">
-            Architectural principles and technical standards applied across every client project.
+            From CRM systems and sales funnels to AI automation and integrations, every skill is focused on building systems that capture, nurture, and convert more leads.
           </p>
-          <div className="h-1 w-24 bg-[#88a725] mt-4 rounded-full" />
+          <div className="h-1 w-24 bg-[#0A66C2] mt-4 rounded-full" />
         </FadeUp>
 
         {/* Highlights Cards Grid */}
@@ -65,8 +65,8 @@ export function SkillsSection() {
             const IconComponent = item.icon;
             return (
               <motion.div key={index} variants={motionItem}>
-                <div className="h-full p-8 bg-white/75 dark:bg-black/75 border border-[#88a725]/25 backdrop-blur-2xl rounded-[32px] space-y-4 hover:border-[#88a725] transition-all duration-300 group shadow-lg">
-                  <div className="h-12 w-12 border border-[#88a725] bg-[#88a725] text-white flex items-center justify-center rounded-full group-hover:bg-black group-hover:border-black transition-colors duration-300">
+                <div className="h-full p-8 bg-white/75 dark:bg-black/75 border border-[#0A66C2]/25 backdrop-blur-2xl rounded-[32px] space-y-4 hover:border-[#0A66C2] transition-all duration-300 group shadow-lg">
+                  <div className="h-12 w-12 border border-[#0A66C2] bg-[#0A66C2] text-white flex items-center justify-center rounded-full group-hover:bg-black group-hover:border-black transition-colors duration-300">
                     <IconComponent className="h-6 w-6" />
                   </div>
 

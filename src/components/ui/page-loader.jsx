@@ -40,7 +40,7 @@ export function PageLoader({ onComplete }) {
             className="absolute inset-0 pointer-events-none opacity-[0.06]"
             style={{
               backgroundImage:
-                "linear-gradient(#88a725 1px, transparent 1px), linear-gradient(90deg, #88a725 1px, transparent 1px)",
+                "linear-gradient(#0A66C2 1px, transparent 1px), linear-gradient(90deg, #0A66C2 1px, transparent 1px)",
               backgroundSize: "60px 60px",
             }}
           />
@@ -52,7 +52,7 @@ export function PageLoader({ onComplete }) {
             className="absolute w-[420px] h-[420px] rounded-full"
             style={{
               background:
-                "radial-gradient(circle, rgba(136,167,37,0.22) 0%, transparent 70%)",
+                "radial-gradient(circle, rgba(10, 102, 194,0.22) 0%, transparent 70%)",
             }}
           />
 
@@ -63,11 +63,15 @@ export function PageLoader({ onComplete }) {
             transition={{ delay: 0.1, duration: 0.5 }}
             className="absolute top-10 left-1/2 -translate-x-1/2 flex items-center gap-3"
           >
-            <span className="h-2 w-2 rounded-full bg-[#88a725] animate-pulse" />
+            <img
+              src="/ali.png"
+              alt="Ali Raza Amir"
+              className="h-9 w-9 rounded-full border border-[#0A66C2] object-cover"
+            />
             <span className="text-xs uppercase tracking-[0.3em] text-zinc-400 font-semibold font-sans">
-              M Tahir — Portfolio
+              Ali Raza Amir — Portfolio
             </span>
-            <span className="h-2 w-2 rounded-full bg-[#88a725] animate-pulse" />
+            <span className="h-2 w-2 rounded-full bg-[#0A66C2] animate-pulse" />
           </motion.div>
 
           {/* Main counter */}
@@ -76,7 +80,7 @@ export function PageLoader({ onComplete }) {
             <div className="relative">
               {/* Shadow / echo digit behind */}
               <span
-                className="absolute inset-0 text-[6rem] sm:text-[7rem] font-bold text-[#88a725]/10 leading-none font-sans select-none blur-sm"
+                className="absolute inset-0 text-[6rem] sm:text-[7rem] font-bold text-[#0A66C2]/10 leading-none font-sans select-none blur-sm"
                 aria-hidden="true"
               >
                 {count}
@@ -91,17 +95,17 @@ export function PageLoader({ onComplete }) {
 
             {/* Percent label */}
             <div className="flex items-center gap-3">
-              <div className="h-px w-12 bg-[#88a725]/40" />
-              <span className="text-[#88a725] text-xs font-bold uppercase tracking-[0.3em] font-sans">
+              <div className="h-px w-12 bg-[#0A66C2]/40" />
+              <span className="text-[#0A66C2] text-xs font-bold uppercase tracking-[0.3em] font-sans">
                 Loading
               </span>
-              <div className="h-px w-12 bg-[#88a725]/40" />
+              <div className="h-px w-12 bg-[#0A66C2]/40" />
             </div>
 
             {/* Progress bar */}
             <div className="w-64 sm:w-80 h-[2px] bg-white/10 rounded-full overflow-hidden">
               <motion.div
-                className="h-full bg-[#88a725] rounded-full origin-left"
+                className="h-full bg-[#0A66C2] rounded-full origin-left"
                 style={{ scaleX: count / 100 }}
                 transition={{ ease: "linear" }}
               />
@@ -116,7 +120,7 @@ export function PageLoader({ onComplete }) {
                   style={{
                     backgroundColor:
                       i < Math.floor(count / 5)
-                        ? "#88a725"
+                        ? "#0A66C2"
                         : "rgba(255,255,255,0.12)",
                   }}
                 />

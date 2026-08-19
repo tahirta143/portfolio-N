@@ -29,9 +29,9 @@ export const CircularTestimonials = ({
 }) => {
   // Color & font config defaults
   const colorName = colors.name ?? "currentColor";
-  const colorDesignation = colors.designation ?? "#88a725";
+  const colorDesignation = colors.designation ?? "#0A66C2";
   const colorTestimony = colors.testimony ?? "currentColor";
-  const colorArrowBg = colors.arrowBackground ?? "#88a725";
+  const colorArrowBg = colors.arrowBackground ?? "#0A66C2";
   const colorArrowFg = colors.arrowForeground ?? "#ffffff";
   const colorArrowHoverBg = colors.arrowHoverBackground ?? "#000000";
   const fontSizeName = fontSizes.name ?? "1.5rem";
@@ -279,7 +279,7 @@ export const CircularTestimonials = ({
           border-radius: 1.5rem;
           box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
           cursor: pointer;
-          border: 2px solid rgba(136, 167, 37, 0.3);
+          border: 2px solid rgba(10, 102, 194, 0.3);
         }
         .testimonial-content {
           display: flex;

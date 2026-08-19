@@ -211,7 +211,7 @@ export function ScrollableCardStack({
     <section
       ref={sectionRef}
       aria-label="Scrollable card stack"
-      className={cn("relative w-full border-t border-[#88a725]/10 bg-transparent select-none", className)}
+      className={cn("relative w-full border-t border-[#0A66C2]/10 bg-transparent select-none", className)}
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >
@@ -230,7 +230,7 @@ export function ScrollableCardStack({
             role="application"
             aria-label="Experience Cards Stack Container."
             onKeyDown={handleKeyDown}
-            className="relative w-full max-w-5xl min-h-[520px] flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-[#88a725] p-2 cursor-ns-resize"
+            className="relative w-full max-w-5xl min-h-[520px] flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-[#0A66C2] p-2 cursor-ns-resize"
           >
             <div className="relative w-full h-full min-h-[480px]">
               {items.map((item, index) => {
@@ -251,15 +251,15 @@ export function ScrollableCardStack({
                     className={cn(
                       "absolute inset-x-0 top-0 p-8 md:p-12 rounded-[36px] border bg-white/90 dark:bg-black/90 backdrop-blur-3xl transition-colors duration-300 shadow-2xl will-change-transform",
                       isTop
-                        ? "border-[#88a725] ring-2 ring-[#88a725]/30 pointer-events-auto"
-                        : "border-[#88a725]/20 pointer-events-auto cursor-pointer opacity-60 hover:opacity-80"
+                        ? "border-[#0A66C2] ring-2 ring-[#0A66C2]/30 pointer-events-auto"
+                        : "border-[#0A66C2]/20 pointer-events-auto cursor-pointer opacity-60 hover:opacity-80"
                     )}
                   >
                     {/* Header Row */}
-                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-[#88a725]/20 pb-6 mb-6">
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-[#0A66C2]/20 pb-6 mb-6">
                       <div>
                         <div className="flex items-center gap-3">
-                          <div className="h-9 w-9 border border-[#88a725] bg-[#88a725] text-white flex items-center justify-center rounded-full">
+                          <div className="h-9 w-9 border border-[#0A66C2] bg-[#0A66C2] text-white flex items-center justify-center rounded-full">
                             <Briefcase className="h-4 w-4" />
                           </div>
                           <h3 className="text-2xl md:text-3xl font-extrabold uppercase tracking-wider text-zinc-950 dark:text-white">
@@ -270,13 +270,13 @@ export function ScrollableCardStack({
                           <span className="font-bold text-zinc-900 dark:text-zinc-100">{item.company}</span>
                           <span>•</span>
                           <span className="flex items-center gap-1.5">
-                            <MapPin className="h-4 w-4 text-[#88a725]" />
+                            <MapPin className="h-4 w-4 text-[#0A66C2]" />
                             {item.location}
                           </span>
                         </div>
                       </div>
 
-                      <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#88a725] text-white text-xs font-bold uppercase tracking-widest rounded-full self-start sm:self-center shadow-sm">
+                      <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#0A66C2] text-white text-xs font-bold uppercase tracking-widest rounded-full self-start sm:self-center shadow-sm">
                         <Calendar className="h-3.5 w-3.5" />
                         <span>{item.period}</span>
                       </div>
@@ -290,7 +290,7 @@ export function ScrollableCardStack({
                       <div className="space-y-3 mb-8">
                         {item.achievements.map((ach, idx) => (
                           <div key={idx} className="flex items-start gap-3 text-xs md:text-sm font-sans text-zinc-700 dark:text-zinc-300">
-                            <ChevronRight className="h-4 w-4 text-[#88a725] shrink-0 mt-0.5" />
+                            <ChevronRight className="h-4 w-4 text-[#0A66C2] shrink-0 mt-0.5" />
                             <span>{ach}</span>
                           </div>
                         ))}
@@ -298,7 +298,7 @@ export function ScrollableCardStack({
                     )}
 
                     {item.skills && (
-                      <div className="flex flex-wrap gap-2.5 pt-4 border-t border-[#88a725]/15">
+                      <div className="flex flex-wrap gap-2.5 pt-4 border-t border-[#0A66C2]/15">
                         {item.skills.map((s, idx) => (
                           <Badge key={idx} variant="secondary" className="text-xs font-semibold px-3 py-1 rounded-full">
                             {s}
@@ -307,7 +307,7 @@ export function ScrollableCardStack({
                       </div>
                     )}
 
-                    <div className="absolute top-6 right-6 text-xs font-mono font-bold text-[#88a725] uppercase tracking-widest bg-[#88a725]/10 px-3 py-1 rounded-full border border-[#88a725]/30">
+                    <div className="absolute top-6 right-6 text-xs font-mono font-bold text-[#0A66C2] uppercase tracking-widest bg-[#0A66C2]/10 px-3 py-1 rounded-full border border-[#0A66C2]/30">
                       0{index + 1} / 0{items.length}
                     </div>
                   </div>
@@ -317,11 +317,11 @@ export function ScrollableCardStack({
           </div>
 
           {/* Scrubbed Progress Bar */}
-          <div className="w-full max-w-5xl mt-4 h-1 rounded-full bg-[#88a725]/15 overflow-hidden">
+          <div className="w-full max-w-5xl mt-4 h-1 rounded-full bg-[#0A66C2]/15 overflow-hidden">
             <span
               ref={progressRef}
               aria-hidden
-              className="block h-full origin-left scale-x-0 bg-[#88a725] transition-transform duration-75"
+              className="block h-full origin-left scale-x-0 bg-[#0A66C2] transition-transform duration-75"
               style={shouldReduceMotion ? { transform: `scaleX(${(activeIndex + 1) / items.length})` } : undefined}
             />
           </div>
@@ -334,11 +334,11 @@ export function ScrollableCardStack({
                 onClick={handlePrev}
                 disabled={activeIndex === 0}
                 aria-label="Previous card"
-                className="p-3 border border-[#88a725] bg-[#88a725] text-white disabled:opacity-30 disabled:cursor-not-allowed hover:bg-black hover:border-black transition-all duration-300 cursor-pointer rounded-full shadow-md"
+                className="p-3 border border-[#0A66C2] bg-[#0A66C2] text-white disabled:opacity-30 disabled:cursor-not-allowed hover:bg-black hover:border-black transition-all duration-300 cursor-pointer rounded-full shadow-md"
               >
                 <ChevronUp className="h-5 w-5" />
               </motion.button>
-              <span className="text-xs font-mono uppercase tracking-widest text-[#88a725] font-bold">
+              <span className="text-xs font-mono uppercase tracking-widest text-[#0A66C2] font-bold">
                 0{activeIndex + 1} / 0{items.length}
               </span>
               <motion.button
@@ -346,7 +346,7 @@ export function ScrollableCardStack({
                 onClick={handleNext}
                 disabled={activeIndex === items.length - 1}
                 aria-label="Next card"
-                className="p-3 border border-[#88a725] bg-[#88a725] text-white disabled:opacity-30 disabled:cursor-not-allowed hover:bg-black hover:border-black transition-all duration-300 cursor-pointer rounded-full shadow-md"
+                className="p-3 border border-[#0A66C2] bg-[#0A66C2] text-white disabled:opacity-30 disabled:cursor-not-allowed hover:bg-black hover:border-black transition-all duration-300 cursor-pointer rounded-full shadow-md"
               >
                 <ChevronDown className="h-5 w-5" />
               </motion.button>
@@ -363,17 +363,17 @@ export function ScrollableCardStack({
                     aria-selected={isSelected}
                     aria-label={`Go to card ${idx + 1} of ${items.length}`}
                     onClick={() => goToIndex(idx)}
-                    className={`h-2.5 transition-all duration-300 cursor-pointer rounded-full outline-none focus-visible:ring-2 focus-visible:ring-[#88a725] ${
+                    className={`h-2.5 transition-all duration-300 cursor-pointer rounded-full outline-none focus-visible:ring-2 focus-visible:ring-[#0A66C2] ${
                       isSelected
-                        ? "w-8 bg-[#88a725]"
-                        : "w-2.5 bg-[#88a725]/30 hover:bg-black dark:hover:bg-white"
+                        ? "w-8 bg-[#0A66C2]"
+                        : "w-2.5 bg-[#0A66C2]/30 hover:bg-black dark:hover:bg-white"
                     }`}
                   />
                 );
               })}
             </div>
 
-            <p className="text-xs uppercase tracking-widest text-[#88a725] font-bold">
+            <p className="text-xs uppercase tracking-widest text-[#0A66C2] font-bold">
               Scroll page to cycle through cards or use controls
             </p>
           </div>

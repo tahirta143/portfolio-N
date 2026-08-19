@@ -29,8 +29,8 @@ export function AnimatedInput({
         className={cn(
           "relative flex items-center w-full border bg-white/80 dark:bg-black/80 backdrop-blur-2xl transition-all duration-300 rounded-2xl",
           isFocused
-            ? "border-[#88a725] ring-2 ring-[#88a725]/40"
-            : "border-[#88a725]/30 hover:border-[#88a725]"
+            ? "border-[#0A66C2] ring-2 ring-[#0A66C2]/40"
+            : "border-[#0A66C2]/30 hover:border-[#0A66C2]"
         )}
       >
         <AnimatePresence>
@@ -41,7 +41,7 @@ export function AnimatedInput({
               animate={{ opacity: 1, scale: 1, x: 0 }}
               exit={shouldReduceMotion ? { opacity: 0 } : { opacity: 0, scale: 0.6, x: -8 }}
               transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
-              className="pl-4 pr-1 text-[#88a725] flex items-center justify-center shrink-0"
+              className="pl-4 pr-1 text-[#0A66C2] flex items-center justify-center shrink-0"
             >
               <Icon className="h-4 w-4" />
             </motion.div>
@@ -79,11 +79,11 @@ export function AnimatedInput({
             className={cn(
               "absolute left-4 pointer-events-none font-sans uppercase tracking-widest text-xs font-bold transition-colors origin-left",
               isFloating
-                ? "text-[#88a725] bg-white dark:bg-black px-1.5 rounded-md z-10"
+                ? "text-[#0A66C2] bg-white dark:bg-black px-1.5 rounded-md z-10"
                 : "text-zinc-500 dark:text-zinc-400"
             )}
           >
-            {label} {required && <span className="text-[#88a725]">*</span>}
+            {label} {required && <span className="text-[#0A66C2]">*</span>}
           </motion.label>
         )}
       </div>
@@ -116,8 +116,8 @@ export function AnimatedTextarea({
         className={cn(
           "relative flex w-full border bg-white/80 dark:bg-black/80 backdrop-blur-2xl transition-all duration-300 rounded-2xl",
           isFocused
-            ? "border-[#88a725] ring-2 ring-[#88a725]/40"
-            : "border-[#88a725]/30 hover:border-[#88a725]"
+            ? "border-[#0A66C2] ring-2 ring-[#0A66C2]/40"
+            : "border-[#0A66C2]/30 hover:border-[#0A66C2]"
         )}
       >
         <AnimatePresence>
@@ -128,7 +128,7 @@ export function AnimatedTextarea({
               animate={{ opacity: 1, scale: 1, x: 0 }}
               exit={shouldReduceMotion ? { opacity: 0 } : { opacity: 0, scale: 0.6, x: -8 }}
               transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
-              className="pt-4 pl-4 pr-1 text-[#88a725] shrink-0"
+              className="pt-4 pl-4 pr-1 text-[#0A66C2] shrink-0"
             >
               <Icon className="h-4 w-4" />
             </motion.div>
@@ -166,11 +166,11 @@ export function AnimatedTextarea({
             className={cn(
               "absolute left-4 top-4 pointer-events-none font-sans uppercase tracking-widest text-xs font-bold transition-colors origin-left",
               isFloating
-                ? "text-[#88a725] bg-white dark:bg-black px-1.5 rounded-md z-10"
+                ? "text-[#0A66C2] bg-white dark:bg-black px-1.5 rounded-md z-10"
                 : "text-zinc-500 dark:text-zinc-400"
             )}
           >
-            {label} {required && <span className="text-[#88a725]">*</span>}
+            {label} {required && <span className="text-[#0A66C2]">*</span>}
           </motion.label>
         )}
       </div>

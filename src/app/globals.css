@@ -5,22 +5,22 @@
 :root {
   --background: #ffffff;
   --foreground: #1c1c1a;
-  --accent: #88a725;
+  --accent: #0A66C2;
   --accent-hover: #000000;
   --card: rgba(255, 255, 255, 0.75);
   --card-foreground: #1c1c1a;
-  --border: rgba(136, 167, 37, 0.2);
+  --border: rgba(10, 102, 194, 0.2);
   --font-oswald: 'Oswald', sans-serif;
 }
 
 html.dark {
   --background: #000000;
   --foreground: #ffffff;
-  --accent: #88a725;
+  --accent: #0A66C2;
   --accent-hover: #000000;
   --card: rgba(0, 0, 0, 0.75);
   --card-foreground: #ffffff;
-  --border: rgba(136, 167, 37, 0.25);
+  --border: rgba(10, 102, 194, 0.25);
 }
 
 @theme inline {
@@ -36,7 +36,7 @@ html.dark {
 }
 
 ::selection {
-  background-color: #88a725;
+  background-color: #0A66C2;
   color: #ffffff;
 }
 
@@ -50,7 +50,7 @@ html.dark {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #88a725;
+  background: #0A66C2;
   border-radius: 9999px;
 }
 
@@ -86,7 +86,7 @@ html.dark .ios-glass {
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(136, 167, 37, 0.2);
+  border: 1px solid rgba(10, 102, 194, 0.2);
   border-radius: 32px;
 }
 
@@ -94,7 +94,7 @@ html.dark .ios-card {
   background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(136, 167, 37, 0.25);
+  border: 1px solid rgba(10, 102, 194, 0.25);
   border-radius: 32px;
 }
 

@@ -25,7 +25,7 @@ export function ElasticGallery({ items }) {
             onClick={() => setActiveId(item.id)}
             className={cn(
               "relative cursor-pointer overflow-hidden rounded-[28px] border",
-              "border-[#88a725]/20 bg-zinc-100 dark:bg-zinc-950",
+              "border-[#0A66C2]/20 bg-zinc-100 dark:bg-zinc-950",
               // Elastic accordion transition
               "transition-[flex] duration-700 ease-[cubic-bezier(0.25,1,0.5,1)]",
               isActive ? "flex-[5]" : "flex-[1]"
@@ -46,10 +46,10 @@ export function ElasticGallery({ items }) {
               />
             </div>
 
-            {/* Green accent line on active */}
+            {/* Blue accent line on active */}
             <div
               className={cn(
-                "absolute top-0 left-0 h-[3px] bg-[#88a725] transition-all duration-700",
+                "absolute top-0 left-0 h-[3px] bg-[#0A66C2] transition-all duration-700",
                 isActive ? "w-full" : "w-0"
               )}
             />
@@ -64,7 +64,7 @@ export function ElasticGallery({ items }) {
               )}
             >
               {/* Category badge */}
-              <span className="self-start mb-3 rounded-full border border-[#88a725] bg-[#88a725] px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-white">
+              <span className="self-start mb-3 rounded-full border border-[#0A66C2] bg-[#0A66C2] px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-white">
                 {item.category}
               </span>
 
@@ -93,24 +93,20 @@ export function ElasticGallery({ items }) {
               {/* Action links */}
               <div className="flex items-center gap-3">
                 <a
-                  href={item.liveUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="#contact"
                   onClick={(e) => e.stopPropagation()}
-                  className="group flex items-center gap-1.5 rounded-full bg-[#88a725] hover:bg-black border border-[#88a725] hover:border-black px-4 py-2 text-[11px] font-bold uppercase tracking-widest text-white transition-all duration-300"
+                  className="group flex items-center gap-1.5 rounded-full bg-[#0A66C2] hover:bg-black border border-[#0A66C2] hover:border-black px-4 py-2 text-[11px] font-bold uppercase tracking-widest text-white transition-all duration-300"
                 >
-                  <span>Live</span>
+                  <span>Book a Call</span>
                   <ExternalLink className="h-3 w-3" />
                 </a>
                 <a
-                  href={item.githubUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="#services"
                   onClick={(e) => e.stopPropagation()}
-                  className="flex items-center gap-1.5 rounded-full border border-white/30 hover:border-[#88a725] hover:bg-[#88a725] bg-white/10 backdrop-blur-sm px-4 py-2 text-[11px] font-bold uppercase tracking-widest text-white transition-all duration-300"
+                  className="flex items-center gap-1.5 rounded-full border border-white/30 hover:border-[#0A66C2] hover:bg-[#0A66C2] bg-white/10 backdrop-blur-sm px-4 py-2 text-[11px] font-bold uppercase tracking-widest text-white transition-all duration-300"
                 >
                   <GitBranch className="h-3 w-3" />
-                  <span>Code</span>
+                  <span>Learn More</span>
                 </a>
               </div>
             </div>

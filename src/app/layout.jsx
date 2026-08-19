@@ -9,9 +9,9 @@ const oswald = Oswald({
 });
 
 export const metadata = {
-  title: "M Tahir — Senior Frontend Architect",
-  description: "Modern, high-performance developer portfolio featuring smooth motion, Nature Green aesthetic, and software engineering showcase.",
-  keywords: ["Software Engineer", "Frontend Developer", "Next.js", "React", "Full-Stack", "M Tahir Portfolio"],
+  title: "Ali Raza Amir — GoHighLevel Expert & Automation Specialist",
+  description: "GoHighLevel sales funnels, CRM & automation that work for you. I build complete systems that capture leads, nurture prospects, automate follow-ups, and drive conversions.",
+  keywords: ["GoHighLevel Expert", "GHL Automation", "Sales Funnels", "CRM Setup", "Workflow Automation", "Ali Raza Amir Portfolio"],
 };
 
 export default function RootLayout({ children }) {

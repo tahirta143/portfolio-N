@@ -6,22 +6,22 @@ import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "relative inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-xs font-bold uppercase tracking-wider focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#88a725] disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 cursor-pointer select-none overflow-hidden group",
+  "relative inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-xs font-bold uppercase tracking-wider focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0A66C2] disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 cursor-pointer select-none overflow-hidden group",
   {
     variants: {
       variant: {
         default:
-          "bg-[#88a725] text-white border border-[#88a725]",
+          "bg-[#0A66C2] text-white border border-[#0A66C2]",
         destructive:
           "bg-red-600 text-white border border-red-600",
         outline:
-          "border border-[#88a725] text-[#88a725] bg-transparent",
+          "border border-[#0A66C2] text-[#0A66C2] bg-transparent",
         secondary:
-          "bg-white/80 dark:bg-black/80 text-zinc-900 dark:text-zinc-100 border border-[#88a725]/30 backdrop-blur-md",
+          "bg-white/80 dark:bg-black/80 text-zinc-900 dark:text-zinc-100 border border-[#0A66C2]/30 backdrop-blur-md",
         ghost:
           "text-zinc-900 dark:text-zinc-100",
         link:
-          "text-[#88a725] underline-offset-4 hover:underline p-0 h-auto font-semibold overflow-visible",
+          "text-[#0A66C2] underline-offset-4 hover:underline p-0 h-auto font-semibold overflow-visible",
       },
       size: {
         default: "h-11 px-6 py-2.5",

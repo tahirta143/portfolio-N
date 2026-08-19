@@ -32,7 +32,7 @@ export function ContactSection() {
   return (
     <section
       id="contact"
-      className="py-28 bg-white dark:bg-black text-zinc-900 dark:text-zinc-100 border-t border-[#88a725]/20 relative transition-colors duration-300"
+      className="py-28 bg-white dark:bg-black text-zinc-900 dark:text-zinc-100 border-t border-[#0A66C2]/20 relative transition-colors duration-300"
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Section Header */}
@@ -49,47 +49,47 @@ export function ContactSection() {
             GET IN TOUCH
           </motion.h2>
           <p className="text-zinc-600 dark:text-zinc-400 font-sans text-sm mt-2 font-light max-w-lg">
-            Have a high-impact project or lead frontend opportunity? Fill out the interactive form below.
+            Ready to automate your lead generation and sales process? Fill out the form below and let's build your system.
           </p>
-          <div className="h-1 w-24 bg-[#88a725] mt-4 rounded-full" />
+          <div className="h-1 w-24 bg-[#0A66C2] mt-4 rounded-full" />
         </FadeUp>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           {/* iOS Direct Contact Details Card */}
           <SlideInLeft className="lg:col-span-5 space-y-6">
-            <Card className="p-8 bg-white/75 dark:bg-black/75 border-[#88a725]/20 backdrop-blur-3xl rounded-[32px]">
+            <Card className="p-8 bg-white/75 dark:bg-black/75 border-[#0A66C2]/20 backdrop-blur-3xl rounded-[32px]">
               <h3 className="text-2xl font-bold uppercase text-zinc-950 dark:text-white mb-6">
                 CONTACT INFORMATION
               </h3>
 
               <div className="space-y-6">
-                <div className="flex items-start gap-4 p-4 bg-white/60 dark:bg-black/60 border border-[#88a725]/20 rounded-2xl">
-                  <Mail className="h-5 w-5 text-[#88a725] shrink-0 mt-1" />
+                <div className="flex items-start gap-4 p-4 bg-white/60 dark:bg-black/60 border border-[#0A66C2]/20 rounded-2xl">
+                  <Mail className="h-5 w-5 text-[#0A66C2] shrink-0 mt-1" />
                   <div>
-                    <p className="text-xs uppercase tracking-widest text-[#88a725] font-bold">Direct Email</p>
-                    <a href="mailto:m.tahir@example.com" className="text-sm font-semibold text-zinc-900 dark:text-zinc-200 hover:text-[#88a725] transition-colors">
-                      m.tahir@example.com
+                    <p className="text-xs uppercase tracking-widest text-[#0A66C2] font-bold">Direct Email</p>
+                    <a href="mailto:aliraza.amir@example.com" className="text-sm font-semibold text-zinc-900 dark:text-zinc-200 hover:text-[#0A66C2] transition-colors">
+                      aliraza.amir@example.com
                     </a>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-4 bg-white/60 dark:bg-black/60 border border-[#88a725]/20 rounded-2xl">
-                  <MapPin className="h-5 w-5 text-[#88a725] shrink-0 mt-1" />
+                <div className="flex items-start gap-4 p-4 bg-white/60 dark:bg-black/60 border border-[#0A66C2]/20 rounded-2xl">
+                  <MapPin className="h-5 w-5 text-[#0A66C2] shrink-0 mt-1" />
                   <div>
-                    <p className="text-xs uppercase tracking-widest text-[#88a725] font-bold">Location</p>
+                    <p className="text-xs uppercase tracking-widest text-[#0A66C2] font-bold">Location</p>
                     <p className="text-sm font-semibold text-zinc-900 dark:text-zinc-200">
-                      San Francisco, CA / Remote Worldwide
+                      Pakistan / Working with clients worldwide
                     </p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-4 bg-white/60 dark:bg-black/60 border border-[#88a725]/20 rounded-2xl">
-                  <Phone className="h-5 w-5 text-[#88a725] shrink-0 mt-1" />
+                <div className="flex items-start gap-4 p-4 bg-white/60 dark:bg-black/60 border border-[#0A66C2]/20 rounded-2xl">
+                  <Phone className="h-5 w-5 text-[#0A66C2] shrink-0 mt-1" />
                   <div>
-                    <p className="text-xs uppercase tracking-widest text-[#88a725] font-bold">Availability</p>
+                    <p className="text-xs uppercase tracking-widest text-[#0A66C2] font-bold">Availability</p>
                     <div className="flex items-center gap-2 mt-0.5">
-                      <span className="h-2.5 w-2.5 rounded-full bg-[#88a725] animate-pulse" />
-                      <p className="text-sm font-semibold text-zinc-900 dark:text-zinc-200">Q3/Q4 Project Inquiries Open</p>
+                      <span className="h-2.5 w-2.5 rounded-full bg-[#0A66C2] animate-pulse" />
+                      <p className="text-sm font-semibold text-zinc-900 dark:text-zinc-200">Open for New GoHighLevel Projects</p>
                     </div>
                   </div>
                 </div>
@@ -99,7 +99,7 @@ export function ContactSection() {
 
           {/* Contact Form with SmoothUI Animated Inputs */}
           <SlideInRight delay={0.1} className="lg:col-span-7">
-            <Card className="p-8 bg-white/75 dark:bg-black/75 border-[#88a725]/20 backdrop-blur-3xl rounded-[32px]">
+            <Card className="p-8 bg-white/75 dark:bg-black/75 border-[#0A66C2]/20 backdrop-blur-3xl rounded-[32px]">
               <AnimatePresence mode="wait">
                 {submitted ? (
                   <motion.div
@@ -108,7 +108,7 @@ export function ContactSection() {
                     exit={{ opacity: 0 }}
                     className="py-12 text-center space-y-4"
                   >
-                    <div className="h-16 w-16 bg-[#88a725] text-white flex items-center justify-center mx-auto rounded-full">
+                    <div className="h-16 w-16 bg-[#0A66C2] text-white flex items-center justify-center mx-auto rounded-full">
                       <CheckCircle2 className="h-8 w-8" />
                     </div>
                     <h3 className="text-2xl font-bold uppercase text-zinc-950 dark:text-white">
