@@ -107,7 +107,7 @@ export function TestimonialsSection() {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="text-3xl md:text-5xl font-bold uppercase tracking-tight text-zinc-950 dark:text-white"
           >
-            TESTIMONIALS &amp; ENDORSEMENTS
+            REVIEWS &amp; ENDORSEMENTS
           </motion.h2>
           <div className="h-1 w-24 bg-[#0A66C2] mx-auto mt-4 rounded-full" />
         </FadeUp>
