@@ -42,7 +42,7 @@ export function Navbar() {
             whileTap={{ scale: 0.92 }}
             className="h-9 w-9 overflow-hidden border border-[#0A66C2] bg-[#0A66C2] rounded-full flex items-center justify-center transition-all duration-300"
           >
-            <img src="/ali.png" alt="Ali Raza Amir" className="h-full w-full object-cover" />
+            <img src="/boy.jpg" alt="Ali Raza Amir" className="h-full w-full object-cover scale-[2.2] translate-y-[35%]" />
           </motion.div>
           <span className="text-lg font-bold tracking-widest uppercase text-zinc-950 dark:text-white group-hover:text-[#0A66C2] transition-colors">
             ALI RAZA AMIR <span className="text-xs text-[#0A66C2] font-semibold ml-1">/ GHL EXPERT</span>

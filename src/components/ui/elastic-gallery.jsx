@@ -13,7 +13,7 @@ export function ElasticGallery({ items }) {
 
   return (
     <div
-      className="mx-auto flex h-[520px] w-full flex-col gap-2 md:h-[580px] md:flex-row md:gap-3"
+      className="mx-auto flex h-[360px] w-full flex-col gap-2 md:h-[420px] md:flex-row md:gap-3"
       onMouseLeave={() => setActiveId(items?.[0]?.id ?? null)}
     >
       {items.map((item) => {

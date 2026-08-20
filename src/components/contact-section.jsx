@@ -23,10 +23,19 @@ export function ContactSection() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitted(true);
-    }, 1200);
+
+    const whatsappNumber = "923254828492";
+    const whatsappMessage = [
+      `Name: ${formData.name}`,
+      `Email: ${formData.email}`,
+      `Subject: ${formData.subject}`,
+      `Message: ${formData.message}`,
+    ].join("\n");
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+    setIsSubmitting(false);
+    setSubmitted(true);
   };
 
   return (
@@ -49,7 +58,7 @@ export function ContactSection() {
             GET IN TOUCH
           </motion.h2>
           <p className="text-zinc-600 dark:text-zinc-400 font-sans text-sm mt-2 font-light max-w-lg">
-            Ready to automate your lead generation and sales process? Fill out the form below and let's build your system.
+            Ready to automate your lead generation and sales process? Fill out the form below and let&apos;s build your system.
           </p>
           <div className="h-1 w-24 bg-[#0A66C2] mt-4 rounded-full" />
         </FadeUp>
@@ -112,10 +121,10 @@ export function ContactSection() {
                       <CheckCircle2 className="h-8 w-8" />
                     </div>
                     <h3 className="text-2xl font-bold uppercase text-zinc-950 dark:text-white">
-                      MESSAGE TRANSMITTED
+                      WHATSAPP MESSAGE READY
                     </h3>
                     <p className="text-zinc-600 dark:text-zinc-400 font-sans text-sm max-w-md mx-auto">
-                      Thank you for reaching out. Your inquiry has been logged and I will respond within 24 hours.
+                      WhatsApp opened with your details ready to send. Please tap send to start the conversation.
                     </p>
                     <div className="pt-4">
                       <Button

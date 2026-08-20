@@ -177,7 +177,7 @@ export function AboutSection() {
                 {/* Photo Card */}
                 <div className="lg:col-span-5 relative group overflow-hidden border border-[#0A66C2]/40 bg-white/70 dark:bg-black/70 backdrop-blur-2xl rounded-[32px] shadow-xl">
                   <img
-                    src="/ali.png"
+                    src="/boy.jpg"
                     alt="Ali Raza Amir Profile"
                     className="w-full h-[320px] md:h-[360px] object-cover grayscale contrast-125 transition-[filter,transform] duration-700 group-hover:scale-105 group-hover:grayscale-0 group-hover:contrast-100"
                   />

@@ -34,7 +34,7 @@ export function Footer() {
     { label: "Facebook", href: "https://facebook.com", icon: FaFacebookF },
     { label: "Upwork", href: "https://www.upwork.com", icon: FaUpwork },
     { label: "Instagram", href: "https://instagram.com", icon: FaInstagram },
-    { label: "LinkedIn", href: "https://linkedin.com", icon: FaLinkedinIn },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/ali-raza-amir?utm_source=share_via&utm_content=profile&utm_medium=member_android", icon: FaLinkedinIn },
   ];
 
   return (
