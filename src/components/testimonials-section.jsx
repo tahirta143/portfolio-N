@@ -7,87 +7,47 @@ import { CircularTestimonials } from "./ui/circular-testimonials";
 import { motion } from "framer-motion";
 
 const testimonials = [
-  {
-    quote:
-      "Ali built out our entire GoHighLevel CRM and pipeline from scratch — leads stopped falling through the cracks and our follow-ups finally happen automatically.",
-    name: "Hassan Raza",
-    designation: "Business Owner — Lahore Home Services",
-    src:
-      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    quote:
-      "The sales funnel and automation system Ali set up paid for itself within weeks. Communication was clear and the delivery was fast.",
-    name: "Sarah Mitchell",
-    designation: "Marketing Director — Mitchell Wellness Co.",
-    src:
-      "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    quote:
-      "Top Rated on Upwork for a reason — Ali's workflow automation and appointment system saved our team hours every single week.",
-    name: "Ayesha Khan",
-    designation: "Agency Founder — Karachi Growth Studio",
-    src:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    quote:
-      "Ali understood our process quickly and turned it into a clean CRM setup our whole team can actually use.",
-    name: "Daniel Brooks",
-    designation: "Operations Manager — Brooks Consulting",
-    src:
-      "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    quote:
-      "Our booking flow feels effortless now. The reminders and follow-ups run in the background and our team stays focused.",
-    name: "Usman Ahmed",
-    designation: "Clinic Owner — Islamabad Health Group",
-    src:
-      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    quote:
-      "The snapshot gave us a repeatable foundation for new accounts and made our agency onboarding much more organized.",
-    name: "Emily Carter",
-    designation: "Agency Director — Carter Growth Co.",
-    src:
-      "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    quote:
-      "Ali connected the tools we were juggling and built a reporting view that finally made our lead sources easy to understand.",
-    name: "Bilal Siddiqui",
-    designation: "Founder — Siddiqui Consulting, Dubai",
-    src:
-      "https://images.unsplash.com/photo-1584999734482-0361aecad844?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    quote:
-      "The new website and membership area gave our customers a much smoother first experience with the brand.",
-    name: "Olivia Thompson",
-    designation: "Program Manager — Thompson Education Brand",
-    src:
-      "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    quote:
-      "Our review requests are consistent, timely, and easy to track. It is a small system that has made a meaningful difference.",
-    name: "Fatima Noor",
-    designation: "Marketing Lead — Noor Dental Care, Rawalpindi",
-    src:
-      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    quote:
-      "From the first call to launch, Ali kept the build practical and focused on the parts of our customer journey that needed attention most.",
-    name: "James Wilson",
-    designation: "Business Owner — Wilson Services Group, London",
-    src:
-      "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=800&q=80",
-  },
-];
+  ["When it comes to GoHighLevel, Ali is experienced and knowledgeable and a great teacher, often using screen sharing and online tools to help educate his clients as he completes the work.", "Daniel Burwen", "Go High Level Setup & Paid Ads Testing"],
+  ["Excellent work. I highly recommend Ali Raza for anyone needing Go High Level setup and support.", "Melissa Maguire", "GHL Funnel & Email Automation Setup"],
+  ["Amazing work completed on funnel and event registration page in Go High Level. Instructions and understanding of how it works has been complemented with the highest level of detail.", "Melissa Maguire", "GHL Funnel & Email Automation Setup"],
+  ["Very good work. I'd definitely hire him again if needed.", "Joe Stewart", "Need An Experienced AI & Website Person With GHL Experience"],
+  ["He is patient, friendly, knowledgeable - highly recommended.", "Daniel Burwen", "OpAjax Landing Pages in GHL"],
+  ["This was a great option for creating a website and Ali was very easy to work with.", "Lindsey Robb", "Go High Level Sales Funnel Builder Needed"],
+  ["Ali was super responsive and worked hard to complete the task given.", "Roland Ingrisano", "A2P, AI Voice Agent, Automations & Onboarding"],
+  ["Working with Ali has been a game-changer for my business! He is incredibly thorough and lightning-fast when it comes to setting up automations in GoHighLevel. He is efficient, reliable, and truly knows GHL inside and out.", "Athena Payne", "GoHighLevel Workflow Setup Expert"],
+  ["Ali was excellent. It was my first time working with him, and the amount of effort he put into one page was phenomenal.", "John Walker", "GoHighLevel Freelancer"],
+  ["Ali is very good with GHL and works well with clearly defined tasks. Knows lots about the platform and can deliver results.", "Brandon Parker", "GoHighLevel Automation Specialist"],
+  ["Great work. Prompt and communicated well.", "Brandon Parker", "GoHighLevel Automation Specialist"],
+  ["I got a referral from another client that is working with Ali, and I see why Ali has been recommended. He is really good at what he does, and I highly recommend his services.", "Luis Mendez", "30 Minute Consultation"],
+  ["Ali Raza is incredibly good with GoHighLevel.", "Durwin Babb", "GoHighLevel Consulting"],
+  ["Great customer service and very detailed and professional.", "Craig Campbell", "A2P Compliant Forms"],
+  ["I asked Ali to create a landing page. It was done quickly and efficiently and he was very responsive. Happy with the service and would recommend to others.", "Julia Bykhovskaia", "Landing Page Setup in GHL"],
+  ["Amazing work. This is my second time using him to build a website and he delivered top quality. He went above and beyond.", "Craig Campbell", "REBRANDU Website Design"],
+  ["Truly grateful for the patience, passion, and grace Ali was able to bring our organization while working together.", "Ollie", "Building a fully functional end-to-end website"],
+].map(([quote, name, designation], index) => ({
+  quote,
+  name,
+  designation,
+  src: [
+    "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=520&q=80",
+    "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=520&q=80",
+    "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=520&q=80",
+    "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=520&q=80",
+    "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?auto=format&fit=crop&w=520&q=80",
+    "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=520&q=80",
+    "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=520&q=80",
+    "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=520&q=80",
+    "https://images.unsplash.com/photo-1507591064344-4c6ce005b128?auto=format&fit=crop&w=520&q=80",
+    "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=520&q=80",
+    "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=520&q=80",
+    "https://images.unsplash.com/photo-1566492031773-4f4e44671857?auto=format&fit=crop&w=520&q=80",
+    "https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=520&q=80",
+    "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=520&q=80",
+    "https://images.unsplash.com/photo-1548142813-c348350df52b?auto=format&fit=crop&w=520&q=80",
+    "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=520&q=80",
+    "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?auto=format&fit=crop&w=520&q=80",
+  ][index],
+}));
 
 export function TestimonialsSection() {
   return (
@@ -99,7 +59,7 @@ export function TestimonialsSection() {
         {/* Section Header */}
         <FadeUp className="text-center mb-16">
           <Badge variant="outline" className="mb-3 rounded-full">
-            06 // CLIENT FEEDBACK
+            10 // CLIENT REVIEWS
           </Badge>
           <motion.h2
             initial={{ clipPath: "inset(0 0 100% 0)", y: 20 }}
@@ -107,7 +67,7 @@ export function TestimonialsSection() {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="text-3xl md:text-5xl font-bold uppercase tracking-tight text-zinc-950 dark:text-white"
           >
-            REVIEWS &amp; ENDORSEMENTS
+            CLIENT REVIEWS
           </motion.h2>
           <div className="h-1 w-24 bg-[#0A66C2] mx-auto mt-4 rounded-full" />
         </FadeUp>

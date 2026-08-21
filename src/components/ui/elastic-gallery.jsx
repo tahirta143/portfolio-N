@@ -8,7 +8,7 @@ function cn(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export function ElasticGallery({ items }) {
+export function ElasticGallery({ items, onProjectClick }) {
   const [activeId, setActiveId] = useState(items?.[0]?.id ?? null);
 
   return (
@@ -22,7 +22,19 @@ export function ElasticGallery({ items }) {
           <div
             key={item.id}
             onMouseEnter={() => setActiveId(item.id)}
-            onClick={() => setActiveId(item.id)}
+            onClick={() => {
+              setActiveId(item.id);
+              onProjectClick?.(item);
+            }}
+            onKeyDown={(event) => {
+              if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                setActiveId(item.id);
+                onProjectClick?.(item);
+              }
+            }}
+            role="button"
+            tabIndex={0}
             className={cn(
               "relative cursor-pointer overflow-hidden rounded-[28px] border",
               "border-[#0A66C2]/20 bg-zinc-100 dark:bg-zinc-950",
@@ -37,6 +49,7 @@ export function ElasticGallery({ items }) {
                 src={item.image}
                 alt={item.title}
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1280px) 85vw, 1400px"
                 className={cn(
                   "object-cover transition-all duration-700",
                   isActive

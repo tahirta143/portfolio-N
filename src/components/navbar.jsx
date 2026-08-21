@@ -8,9 +8,11 @@ import { useTheme } from "./theme-provider";
 
 const navItems = [
   { label: "About", href: "#about" },
-  { label: "Experience", href: "#experience" },
+  { label: "What I Do", href: "#services" },
+  { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
-  { label: "Services", href: "#services" },
+  { label: "Experience", href: "#experience" },
+  { label: "Process", href: "#background" },
   { label: "Reviews", href: "#testimonials" },
   { label: "Contact", href: "#contact" },
 ];

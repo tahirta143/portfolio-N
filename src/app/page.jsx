@@ -9,11 +9,15 @@ import { AboutSection } from "@/components/about-section";
 import { ExperienceSection } from "@/components/experience-section";
 import { ProjectsSection } from "@/components/projects-section";
 import { ServicesSection } from "@/components/services-section";
+import { SkillsSection } from "@/components/skills-section";
+import { BackgroundSection } from "@/components/background-section";
 import { TestimonialsSection } from "@/components/testimonials-section";
 import { ContactSection } from "@/components/contact-section";
+import { FinalCtaSection } from "@/components/final-cta-section";
 import { Footer } from "@/components/footer";
 import { ScrollReset } from "@/components/scroll-reset";
 import { PageLoader } from "@/components/ui/page-loader";
+import { FloatingWhatsappButton } from "@/components/floating-whatsapp-button";
 
 export default function Home() {
   const [loaded, setLoaded] = useState(false);
@@ -40,29 +44,34 @@ export default function Home() {
             {/* 1. Hero Section */}
             <HeroSection />
 
-            {/* 2. About Section */}
+            {/* 2-3. About Me + Trust / Quick Stats */}
             <AboutSection />
 
-            {/* 3. Experience Section */}
-            <ExperienceSection />
-
-            {/* 4. Projects Section */}
-            <ProjectsSection />
-
-            {/* 5. Services Section */}
+            {/* 4. What I Do */}
             <ServicesSection />
 
-            {/* 6. Testimonials Section */}
+            {/* 5. Skills & Toolkit */}
+            <SkillsSection />
+            {/* 7. Experience */}
+            <ExperienceSection />
+            {/* 6. Projects */}
+            <ProjectsSection />
+            {/* 8-9. Education + How I Work */}
+            <BackgroundSection />
+
+            {/* 10. Client Reviews */}
             <TestimonialsSection />
-
-            {/* 7. Contact Section */}
+            {/* 12. Final CTA */}
+            <FinalCtaSection />
+            {/* 11. Contact Section */}
             <ContactSection />
-
             {/* Footer */}
             <Footer />
           </motion.main>
         )}
       </AnimatePresence>
+
+      {loaded && <FloatingWhatsappButton />}
     </ThemeProvider>
   );
 }
