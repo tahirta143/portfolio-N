@@ -47,7 +47,7 @@ export function Navbar() {
             <img src="/boy.jpg" alt="Ali Raza Amir" className="h-full w-full object-cover scale-[2.2] translate-y-[35%]" />
           </motion.div>
           <span className="text-lg font-bold tracking-widest uppercase text-zinc-950 dark:text-white group-hover:text-[#0A66C2] transition-colors">
-            ALI RAZA AMIR <span className="text-xs text-[#0A66C2] font-semibold ml-1">/ GHL EXPERT</span>
+            ALI RAZA AMIR 
           </span>
         </a>
 
