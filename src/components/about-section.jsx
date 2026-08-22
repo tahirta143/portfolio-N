@@ -126,7 +126,7 @@ export function AboutSection() {
                   <img
                     src="/boy.jpg"
                     alt="Ali Raza Amir Profile"
-                    className="w-full h-[320px] md:h-[360px] object-cover grayscale contrast-125 transition-[filter,transform] duration-700 group-hover:scale-105 group-hover:grayscale-0 group-hover:contrast-100"
+                    className="w-full h-[320px] md:h-[360px] object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
                   <div className="absolute bottom-4 left-4 right-4 p-3.5 bg-white/80 dark:bg-black/80 border border-[#0A66C2]/40 backdrop-blur-3xl rounded-2xl">
@@ -206,33 +206,34 @@ export function AboutSection() {
               </div>
 
               {/* The 4 Stat Cards */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 items-stretch">
                 {metrics.map((m, idx) => (
                   <GlowHoverCard
                     key={idx}
-                    className="h-full min-h-[210px]"
+                    className="h-full"
+                    contentClassName="p-5"
                   >
-                    <div className="flex h-full min-h-[146px] flex-col justify-between gap-4">
-                      <p className="text-4xl sm:text-5xl font-extrabold text-[#0A66C2] tracking-tight font-sans">
+                    <div className="flex h-full flex-col justify-between gap-2">
+                      <p className="text-3xl sm:text-4xl font-extrabold text-[#0A66C2] tracking-tight font-sans leading-none">
                         <AnimatedCounter to={m.to} suffix={m.suffix} isDecimal={m.isDecimal} padZero={m.padZero} />
                       </p>
                       <div>
-                        <h4 className="text-sm font-bold uppercase tracking-wider text-zinc-950 dark:text-white">
+                        <h4 className="text-xs font-bold uppercase tracking-wider text-zinc-950 dark:text-white">
                           {m.label}
                         </h4>
-                        <p className="mt-2 text-[11px] text-zinc-500 font-sans font-light leading-relaxed">
+                        <p className="mt-1 text-[10px] text-zinc-500 font-sans font-light leading-snug">
                           {m.desc}
                         </p>
                       </div>
                     </div>
                   </GlowHoverCard>
                 ))}
-                <GlowHoverCard className="h-full min-h-[210px]">
-                  <div className="flex h-full min-h-[146px] flex-col justify-between gap-4">
-                    <p className="text-4xl sm:text-5xl font-extrabold text-[#0A66C2] tracking-tight font-sans uppercase">
+                <GlowHoverCard className="h-full" contentClassName="p-5">
+                  <div className="flex h-full flex-col justify-between gap-2">
+                    <p className="text-3xl sm:text-4xl font-extrabold text-[#0A66C2] tracking-tight font-sans uppercase leading-none">
                       {topRatedStat.label}
                     </p>
-                    <h4 className="text-sm font-bold uppercase tracking-wider text-zinc-950 dark:text-white">
+                    <h4 className="text-xs font-bold uppercase tracking-wider text-zinc-950 dark:text-white">
                       {topRatedStat.desc}
                     </h4>
                   </div>

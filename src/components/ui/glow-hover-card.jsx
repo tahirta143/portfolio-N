@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 export function GlowHoverCard({
   children,
   className,
+  contentClassName,
   glowColor = "210 90% 55%",
 }) {
   const cardRef = useRef(null);
@@ -95,20 +96,10 @@ export function GlowHoverCard({
 
       {/* CARD SURFACE */}
       <div
-        className="
-          relative
-          z-10
-          overflow-hidden
-          rounded-[31px]
-          border
-          border-[#0A66C2]/20
-          bg-white/75
-          p-8
-          backdrop-blur-2xl
-
-          dark:border-white/10
-          dark:bg-black/75
-        "
+        className={cn(
+          "relative z-10 h-full overflow-hidden rounded-[31px] border border-[#0A66C2]/20 bg-white/75 p-8 backdrop-blur-2xl dark:border-white/10 dark:bg-black/75",
+          contentClassName
+        )}
       >
         {/* Very subtle inner glow */}
         {!reducedMotion && (
@@ -136,7 +127,7 @@ export function GlowHoverCard({
         )}
 
         {/* CONTENT */}
-        <div className="relative z-10">
+        <div className="relative z-10 h-full">
           {children}
         </div>
       </div>

@@ -4,7 +4,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import {
   ArrowUp,
-  Terminal,
   MapPin,
   Mail,
   ChevronRight,
@@ -44,8 +43,12 @@ export function Footer() {
           {/* Column 1: Brand Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <div className="h-10 w-10 border border-[#0A66C2] bg-[#0A66C2] text-white flex items-center justify-center rounded-full">
-                <Terminal className="h-5 w-5" />
+              <div className="h-10 w-10 overflow-hidden border border-[#0A66C2] bg-[#0A66C2] flex items-center justify-center rounded-full">
+                <img
+                  src="/boy.jpg"
+                  alt="Ali Raza Amir"
+                  className="h-full w-full object-cover scale-[2.2] translate-y-[35%]"
+                />
               </div>
               <div>
                 <span className="text-xl font-bold tracking-widest uppercase text-zinc-950 dark:text-white">
