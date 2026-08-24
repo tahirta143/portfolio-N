@@ -101,7 +101,7 @@ export function ExperienceSection() {
             >
               EXPERIENCE THAT DRIVES GROWTH.
             </motion.h2>
-            <p className="text-zinc-600 dark:text-zinc-400 font-sans text-sm mt-2 font-light">
+            <p className="text-zinc-600 dark:text-zinc-400 font-sans text-base sm:text-sm mt-2 font-light">
               From GoHighLevel funnels and CRM systems to workflow automation and integrations, every role has strengthened my ability to build automated systems that help businesses capture, nurture, and convert leads.
             </p>
             <div className="h-1 w-24 bg-[#0A66C2] mt-4 rounded-full" />
@@ -139,27 +139,27 @@ export function ExperienceSection() {
               <motion.div
                 key={index}
                 variants={motionItem}
-                className="p-8 border border-[#0A66C2]/20 bg-white/80 dark:bg-black/80 backdrop-blur-2xl space-y-4 rounded-[32px]"
+                className="p-4 sm:p-8 border border-[#0A66C2]/20 bg-white/80 dark:bg-black/80 backdrop-blur-2xl space-y-3 sm:space-y-4 rounded-2xl sm:rounded-[32px]"
               >
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-[#0A66C2]/10 pb-4">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-[#0A66C2]/10 pb-3 sm:pb-4">
                   <div>
-                    <h3 className="text-2xl font-bold uppercase text-zinc-950 dark:text-white">
+                    <h3 className="text-lg sm:text-2xl font-bold uppercase text-zinc-950 dark:text-white">
                       {exp.role}
                     </h3>
-                    <p className="text-sm text-zinc-600 dark:text-zinc-400 font-sans">
+                    <p className="text-base sm:text-sm text-zinc-600 dark:text-zinc-400 font-sans">
                       {exp.company} • {exp.location}
                     </p>
                   </div>
-                  <span className="text-xs font-semibold uppercase px-3.5 py-1 bg-[#0A66C2] text-white rounded-full self-start">
+                  <span className="text-[10px] sm:text-xs font-semibold uppercase px-2.5 sm:px-3.5 py-0.5 sm:py-1 bg-[#0A66C2] text-white rounded-full self-start">
                     {exp.period}
                   </span>
                 </div>
-                <p className="text-sm text-zinc-700 dark:text-zinc-300 font-sans leading-relaxed">
+                <p className="text-base sm:text-sm text-zinc-700 dark:text-zinc-300 font-sans leading-relaxed">
                   {exp.description}
                 </p>
-                <div className="flex flex-wrap gap-2 pt-2 border-t border-[#0A66C2]/10">
+                <div className="flex flex-wrap gap-1.5 sm:gap-2 pt-2 border-t border-[#0A66C2]/10">
                   {exp.skills.map((s, idx) => (
-                    <Badge key={idx} variant="secondary" className="text-[11px]">
+                    <Badge key={idx} variant="secondary" className="text-[10px] sm:text-[11px]">
                       {s}
                     </Badge>
                   ))}

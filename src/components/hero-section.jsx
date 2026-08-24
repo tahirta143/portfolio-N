@@ -55,7 +55,7 @@ export function HeroSection() {
           {/* Headline with Mask Reveal Text Animations */}
           <div className="space-y-2">
             <motion.div variants={lineVariants} initial="hidden" animate="visible">
-              <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold uppercase tracking-tight text-white leading-none font-sans">
+              <h1 className="text-3xl sm:text-6xl md:text-7xl font-bold uppercase tracking-tight text-white leading-none font-sans">
                 Turn More Leads Into
               </h1>
             </motion.div>
@@ -66,7 +66,7 @@ export function HeroSection() {
               animate="visible"
               transition={{ delay: 0.15 }}
             >
-              <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold uppercase tracking-tight text-white leading-none font-sans">
+              <h1 className="text-3xl sm:text-6xl md:text-7xl font-bold uppercase tracking-tight text-white leading-none font-sans">
                 Customers{" "}
                 <span className="underline decoration-[#0A66C2] underline-offset-8 text-[#0A66C2]">
                   Automatically
@@ -80,7 +80,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.35, duration: 0.7 }}
-            className="text-base sm:text-xl text-zinc-200 font-sans tracking-wide leading-relaxed max-w-2xl font-light"
+            className="text-sm sm:text-xl text-zinc-200 font-sans tracking-wide leading-relaxed max-w-2xl font-light"
           >
             GoHighLevel sales funnels, CRM &amp; automation that work for you. I build complete systems that capture leads, nurture prospects, automate follow-ups, manage your pipeline, and drive conversions — all in one place.
           </motion.p>

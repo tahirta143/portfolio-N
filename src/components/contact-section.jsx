@@ -73,7 +73,7 @@ export function ContactSection() {
           >
             GET IN TOUCH
           </motion.h2>
-          <p className="text-zinc-600 dark:text-zinc-400 font-sans text-sm mt-2 font-light max-w-lg">
+          <p className="text-zinc-600 dark:text-zinc-400 font-sans text-base sm:text-sm mt-2 font-light max-w-lg">
             Have a GoHighLevel project in mind? Tell me what you&apos;re looking to build, fix, or automate. I&apos;ll review your requirements and get back to you to discuss the best approach.
           </p>
           <div className="h-1 w-24 bg-[#0A66C2] mt-4 rounded-full" />
@@ -90,7 +90,7 @@ export function ContactSection() {
               <div className="space-y-6">
                 <div className="flex items-start gap-4 p-4 bg-white/60 dark:bg-black/60 border border-[#0A66C2]/20 rounded-2xl">
                   <Phone className="h-5 w-5 text-[#0A66C2] shrink-0 mt-1" />
-                  <div>
+                  <div className="min-w-0">
                     <p className="text-xs uppercase tracking-widest text-[#0A66C2] font-bold">WhatsApp / Phone</p>
                     <a href="tel:+923061758238" className="text-sm font-semibold text-zinc-900 dark:text-zinc-200 hover:text-[#0A66C2] transition-colors">
                       +92 306 1758238
@@ -101,9 +101,9 @@ export function ContactSection() {
 
                 <div className="flex items-start gap-4 p-4 bg-white/60 dark:bg-black/60 border border-[#0A66C2]/20 rounded-2xl">
                   <Mail className="h-5 w-5 text-[#0A66C2] shrink-0 mt-1" />
-                  <div>
+                  <div className="min-w-0">
                     <p className="text-xs uppercase tracking-widest text-[#0A66C2] font-bold">Email</p>
-                    <a href="mailto:engineeralirazaamir@gmail.com" className="text-sm font-semibold text-zinc-900 dark:text-zinc-200 hover:text-[#0A66C2] transition-colors">
+                    <a href="mailto:engineeralirazaamir@gmail.com" className="text-sm font-semibold text-zinc-900 dark:text-zinc-200 hover:text-[#0A66C2] transition-colors break-all">
                       engineeralirazaamir@gmail.com
                     </a>
                     <p className="text-xs text-zinc-500 dark:text-zinc-500 mt-0.5">Send me your project details</p>
@@ -112,7 +112,7 @@ export function ContactSection() {
 
                 <div className="flex items-start gap-4 p-4 bg-white/60 dark:bg-black/60 border border-[#0A66C2]/20 rounded-2xl">
                   <MapPin className="h-5 w-5 text-[#0A66C2] shrink-0 mt-1" />
-                  <div>
+                  <div className="min-w-0">
                     <p className="text-xs uppercase tracking-widest text-[#0A66C2] font-bold">Location</p>
                     <p className="text-sm font-semibold text-zinc-900 dark:text-zinc-200">
                       Muzaffargarh, Pakistan
@@ -123,7 +123,7 @@ export function ContactSection() {
 
                 <div className="flex items-start gap-4 p-4 bg-white/60 dark:bg-black/60 border border-[#0A66C2]/20 rounded-2xl">
                   <Phone className="h-5 w-5 text-[#0A66C2] shrink-0 mt-1" />
-                  <div>
+                  <div className="min-w-0">
                     <p className="text-xs uppercase tracking-widest text-[#0A66C2] font-bold">Working Hours</p>
                     <div className="flex items-center gap-2 mt-0.5">
                       <span className="h-2.5 w-2.5 rounded-full bg-[#0A66C2] animate-pulse" />
@@ -153,7 +153,7 @@ export function ContactSection() {
                     <h3 className="text-2xl font-bold uppercase text-zinc-950 dark:text-white">
                       WHATSAPP MESSAGE READY
                     </h3>
-                    <p className="text-zinc-600 dark:text-zinc-400 font-sans text-sm max-w-md mx-auto">
+                    <p className="text-zinc-600 dark:text-zinc-400 font-sans text-base sm:text-sm max-w-md mx-auto">
                       WhatsApp opened with your details ready to send. Please tap send to start the conversation.
                     </p>
                     <div className="pt-4">

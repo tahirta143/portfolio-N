@@ -78,7 +78,7 @@ export function SkillsSection() {
           >
             SKILLS &amp; TOOLKIT
           </motion.h2>
-          <p className="text-zinc-600 dark:text-zinc-400 font-sans text-sm mt-2 font-light max-w-xl">
+          <p className="text-zinc-600 dark:text-zinc-400 font-sans text-base sm:text-sm mt-2 font-light max-w-xl">
             From CRM systems and sales funnels to AI automation and integrations, every skill is focused on building systems that capture, nurture, and convert more leads.
           </p>
           <div className="h-1 w-24 bg-[#0A66C2] mt-4 rounded-full" />
@@ -105,7 +105,7 @@ export function SkillsSection() {
                       {item.title}
                     </h3>
 
-                    <p className="text-zinc-600 dark:text-zinc-400 font-sans text-sm leading-relaxed font-light">
+                    <p className="text-zinc-600 dark:text-zinc-400 font-sans text-base sm:text-sm leading-relaxed font-light">
                       {item.description}
                     </p>
 

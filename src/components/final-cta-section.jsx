@@ -28,7 +28,7 @@ export function FinalCtaSection() {
           >
             Let&apos;s Turn Your Leads Into A System That Converts
           </motion.h2>
-          <p className="text-zinc-600 dark:text-zinc-400 font-sans text-sm md:text-base mt-4 max-w-2xl mx-auto font-light leading-relaxed">
+          <p className="text-zinc-600 dark:text-zinc-400 font-sans text-base sm:text-sm mt-4 max-w-2xl mx-auto font-light leading-relaxed">
             Whether you need funnels, CRM automation, workflows, AI agents, or a complete GoHighLevel setup, I&apos;ll build the system around your business — not the other way around.
           </p>
           <div className="h-1 w-24 bg-[#0A66C2] mt-6 mx-auto rounded-full" />

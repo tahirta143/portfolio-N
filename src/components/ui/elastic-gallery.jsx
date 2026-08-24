@@ -87,7 +87,7 @@ export function ElasticGallery({ items, onProjectClick }) {
               </h3>
 
               {/* Subtitle */}
-              <p className="text-xs text-zinc-300 font-sans mb-4 leading-relaxed line-clamp-2 max-w-xs">
+              <p className="text-base sm:text-xs text-zinc-300 font-sans mb-4 leading-relaxed line-clamp-2 max-w-xs">
                 {item.description}
               </p>
 

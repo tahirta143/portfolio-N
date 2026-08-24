@@ -100,7 +100,7 @@ export function ProjectsSection() {
             >
               PROJECTS
             </motion.h2>
-            <p className="text-zinc-600 dark:text-zinc-400 font-sans text-sm mt-2 font-light">
+            <p className="text-zinc-600 dark:text-zinc-400 font-sans text-base sm:text-sm mt-2 font-light">
               Select any project to view the complete case details.
             </p>
             <div className="h-1 w-24 bg-[#0A66C2] mt-4 rounded-full" />
@@ -200,7 +200,7 @@ export function ProjectsSection() {
               <h3 id="project-dialog-title" className="pr-8 text-2xl font-bold uppercase leading-tight text-zinc-950 dark:text-white md:text-4xl">
                 {selectedProject.title}
               </h3>
-              <p className="text-sm leading-7 text-zinc-600 dark:text-zinc-300">
+              <p className="text-base sm:text-sm leading-7 text-zinc-600 dark:text-zinc-300">
                 {selectedProject.description}
               </p>
 

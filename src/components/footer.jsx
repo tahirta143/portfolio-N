@@ -59,7 +59,7 @@ export function Footer() {
                 </p>
               </div>
             </div>
-            <p className="text-xs text-zinc-600 dark:text-zinc-400 font-sans leading-relaxed font-light">
+            <p className="text-base sm:text-xs text-zinc-600 dark:text-zinc-400 font-sans leading-relaxed font-light">
               Building GoHighLevel sales funnels, CRM systems, and automation that turn more leads into customers — automatically.
             </p>
           </div>
@@ -91,7 +91,7 @@ export function Footer() {
               <span className="h-1.5 w-1.5 rounded-full bg-[#0A66C2]" />
               Contact Us
             </h4>
-            <div className="space-y-3 text-xs font-sans text-zinc-600 dark:text-zinc-400 font-light">
+            <div className="space-y-3 text-base sm:text-xs font-sans text-zinc-600 dark:text-zinc-400 font-light">
               <div className="flex items-start gap-2.5">
                 <MapPin className="h-4 w-4 text-[#0A66C2] shrink-0 mt-0.5" />
                 <span>
@@ -99,11 +99,11 @@ export function Footer() {
                   Available for remote work worldwide
                 </span>
               </div>
-              <div className="flex items-center gap-2.5">
-                <Mail className="h-4 w-4 text-[#0A66C2] shrink-0" />
+              <div className="flex items-start gap-2.5">
+                <Mail className="h-4 w-4 text-[#0A66C2] shrink-0 mt-0.5" />
                 <a
                   href="mailto:engineeralirazaamir@gmail.com"
-                  className="hover:text-[#0A66C2] transition-colors"
+                  className="hover:text-[#0A66C2] transition-colors break-all"
                 >
                   Email: engineeralirazaamir@gmail.com
                 </a>

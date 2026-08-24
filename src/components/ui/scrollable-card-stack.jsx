@@ -287,7 +287,7 @@ export function ScrollableCardStack({
                       </div>
                     </div>
 
-                    <p className="text-zinc-700 dark:text-zinc-300 font-sans text-sm md:text-base leading-relaxed mb-6 font-light">
+                    <p className="text-zinc-700 dark:text-zinc-300 font-sans text-base md:text-base leading-relaxed mb-6 font-light">
                       {item.description}
                     </p>
 

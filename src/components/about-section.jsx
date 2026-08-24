@@ -148,7 +148,7 @@ export function AboutSection() {
                   >
                     BUILDING AUTOMATED SYSTEMS THAT TURN LEADS INTO GROWTH
                   </motion.h3>
-                  <p className="text-zinc-600 dark:text-zinc-400 font-sans text-xl md:text-sm leading-relaxed font-light">
+                  <p className="text-zinc-600 dark:text-zinc-400 font-sans text-base sm:text-sm leading-relaxed font-light">
                     I&apos;m Ali Raza Amir, a Computer Engineer from UET Taxila and a GoHighLevel Expert specializing in sales funnels, CRM, websites, and business automation. I combine my technical background with hands-on freelancing experience to build systems that are practical, scalable, and focused on real business results. I help businesses and agencies replace scattered tools and repetitive manual tasks with connected systems that capture leads, manage opportunities, automate follow-ups, and keep the customer journey moving. My approach is simple: understand the business first, then build the technology around it. 📍 Pakistan 🌐 Working with clients worldwide.
                   </p>
 
@@ -158,6 +158,7 @@ export function AboutSection() {
                       <GlowHoverCard
                         key={idx}
                         className="h-full"
+                        contentClassName="p-3 sm:p-8"
                       >
                         <div className="flex items-start gap-2.5">
                           <Sparkles className="h-4 w-4 text-[#0A66C2] shrink-0 mt-0.5" />
@@ -174,11 +175,11 @@ export function AboutSection() {
                     ))}
                   </div>
 
-                  {/* Footer hint */}
+                  {/* Footer hint
                   <div className="pt-2 flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#0A66C2]">
                     <span>Scroll down to view Trust / Quick Stats</span>
                     <ArrowRight className="h-4 w-4 animate-pulse" />
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -199,7 +200,7 @@ export function AboutSection() {
                 >
                   TRUST / QUICK STATS
                 </motion.h2>
-                <p className="text-zinc-600 dark:text-zinc-400 font-sans text-sm mt-1 font-light">
+                <p className="text-zinc-600 dark:text-zinc-400 font-sans text-base sm:text-sm mt-1 font-light">
                   Measurable results built over 3+ years of GoHighLevel systems delivery.
                 </p>
                 <div className="h-1 w-24 bg-[#0A66C2] mt-3 rounded-full" />
@@ -211,10 +212,10 @@ export function AboutSection() {
                   <GlowHoverCard
                     key={idx}
                     className="h-full"
-                    contentClassName="p-5"
+                    contentClassName="p-3 sm:p-5"
                   >
                     <div className="flex h-full flex-col justify-between gap-2">
-                      <p className="text-3xl sm:text-4xl font-extrabold text-[#0A66C2] tracking-tight font-sans leading-none">
+                      <p className="text-2xl sm:text-4xl font-extrabold text-[#0A66C2] tracking-tight font-sans leading-none">
                         <AnimatedCounter to={m.to} suffix={m.suffix} isDecimal={m.isDecimal} padZero={m.padZero} />
                       </p>
                       <div>
@@ -228,9 +229,9 @@ export function AboutSection() {
                     </div>
                   </GlowHoverCard>
                 ))}
-                <GlowHoverCard className="h-full" contentClassName="p-5">
+                <GlowHoverCard className="h-full" contentClassName="p-3 sm:p-5">
                   <div className="flex h-full flex-col justify-between gap-2">
-                    <p className="text-3xl sm:text-4xl font-extrabold text-[#0A66C2] tracking-tight font-sans uppercase leading-none">
+                    <p className="text-2xl sm:text-4xl font-extrabold text-[#0A66C2] tracking-tight font-sans uppercase leading-none">
                       {topRatedStat.label}
                     </p>
                     <h4 className="text-xs font-bold uppercase tracking-wider text-zinc-950 dark:text-white">

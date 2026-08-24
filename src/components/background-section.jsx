@@ -77,7 +77,7 @@ export function BackgroundSection() {
           <h3 className="mb-2 text-2xl font-bold uppercase tracking-tight text-zinc-950 dark:text-white md:text-4xl">
             A process built for results.
           </h3>
-          <p className="mb-6 max-w-2xl text-sm font-light leading-relaxed text-zinc-600 dark:text-zinc-400">
+          <p className="mb-6 max-w-2xl text-base sm:text-sm font-light leading-relaxed text-zinc-600 dark:text-zinc-400">
             From understanding your business to building, testing, and optimizing your GoHighLevel system, I follow a structured process designed to create reliable automation and better customer journeys.
           </p>
           <StaggerContainer className="grid items-stretch gap-5 md:grid-cols-2 xl:grid-cols-3">
@@ -95,7 +95,7 @@ export function BackgroundSection() {
                       </div>
                       <p className="mt-5 text-[10px] font-bold uppercase tracking-widest text-[#0A66C2]">{step.stage}</p>
                       <h3 className="mt-1 text-lg font-bold uppercase text-zinc-950 dark:text-white">{step.title}</h3>
-                      <p className="mt-3 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400 font-light">{step.description}</p>
+                      <p className="mt-3 text-base sm:text-sm leading-relaxed text-zinc-600 dark:text-zinc-400 font-light">{step.description}</p>
                       <div className="mt-auto space-y-1.5 pt-5 border-t border-[#0A66C2]/15">
                         {step.tags.map((tag) => (
                           <div key={tag} className="flex items-center gap-2 text-xs font-sans text-zinc-600 dark:text-zinc-400">
@@ -121,7 +121,7 @@ export function BackgroundSection() {
           >
             EDUCATION &amp; PROFESSIONAL BACKGROUND
           </motion.h2>
-          <p className="mt-2 max-w-2xl text-sm font-light leading-relaxed text-zinc-600 dark:text-zinc-400">
+          <p className="mt-2 max-w-2xl text-base sm:text-sm font-light leading-relaxed text-zinc-600 dark:text-zinc-400">
             A technical foundation for smarter automation.
           </p>
           <div className="mt-4 h-1 w-24 rounded-full bg-[#0A66C2]" />
@@ -135,7 +135,7 @@ export function BackgroundSection() {
               <h3 className="mt-2 text-xl font-bold uppercase text-zinc-950 dark:text-white">University of Engineering & Technology, Taxila</h3>
               <p className="mt-2 text-sm font-semibold text-zinc-700 dark:text-zinc-300">Bachelor of Science in Computer Engineering</p>
               <p className="mt-1 text-xs text-zinc-500">2020 – 2024 · Taxila, Pakistan</p>
-              <p className="mt-5 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">Studied Computer Engineering with a focus on technical problem-solving, programming, computer systems, and engineering fundamentals. I now apply this technical foundation to building GoHighLevel CRM systems, automation workflows, funnels, integrations, and AI-powered business solutions.</p>
+              <p className="mt-5 text-base sm:text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">Studied Computer Engineering with a focus on technical problem-solving, programming, computer systems, and engineering fundamentals. I now apply this technical foundation to building GoHighLevel CRM systems, automation workflows, funnels, integrations, and AI-powered business solutions.</p>
               <div className="mt-5 flex flex-wrap gap-2 pt-4 border-t border-[#0A66C2]/15">
                 {["Computer Engineering", "Programming", "Technical Problem Solving", "Computer Systems"].map((tag) => (
                   <Badge key={tag} variant="secondary" className="text-[11px]">{tag}</Badge>
@@ -152,7 +152,7 @@ export function BackgroundSection() {
                 {certifications.map((certification) => (
                   <li key={certification.title}>
                     <h4 className="text-sm font-bold uppercase text-zinc-950 dark:text-white leading-snug">{certification.title}</h4>
-                    <p className="mt-1.5 text-xs leading-relaxed text-zinc-600 dark:text-zinc-400 font-light">{certification.description}</p>
+                    <p className="mt-1.5 text-base sm:text-xs leading-relaxed text-zinc-600 dark:text-zinc-400 font-light">{certification.description}</p>
                   </li>
                 ))}
               </ul>

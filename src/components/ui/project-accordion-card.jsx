@@ -83,7 +83,7 @@ export function ProjectAccordionCard({ project, isExpanded, onHover }) {
                 </p>
               </div>
 
-              <p className="text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed font-sans font-light border-t border-[#0A66C2]/15 pt-3">
+              <p className="text-base sm:text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed font-sans font-light border-t border-[#0A66C2]/15 pt-3">
                 {project.description}
               </p>
 
