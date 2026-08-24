@@ -148,7 +148,7 @@ export function AboutSection() {
                   >
                     BUILDING AUTOMATED SYSTEMS THAT TURN LEADS INTO GROWTH
                   </motion.h3>
-                  <p className="text-zinc-600 dark:text-zinc-400 font-sans text-xs md:text-sm leading-relaxed font-light">
+                  <p className="text-zinc-600 dark:text-zinc-400 font-sans text-xl md:text-sm leading-relaxed font-light">
                     I&apos;m Ali Raza Amir, a Computer Engineer from UET Taxila and a GoHighLevel Expert specializing in sales funnels, CRM, websites, and business automation. I combine my technical background with hands-on freelancing experience to build systems that are practical, scalable, and focused on real business results. I help businesses and agencies replace scattered tools and repetitive manual tasks with connected systems that capture leads, manage opportunities, automate follow-ups, and keep the customer journey moving. My approach is simple: understand the business first, then build the technology around it. 📍 Pakistan 🌐 Working with clients worldwide.
                   </p>
 
@@ -162,7 +162,7 @@ export function AboutSection() {
                         <div className="flex items-start gap-2.5">
                           <Sparkles className="h-4 w-4 text-[#0A66C2] shrink-0 mt-0.5" />
                           <div>
-                            <h4 className="text-xs font-bold uppercase text-zinc-950 dark:text-white leading-tight">
+                            <h4 className="text-large font-bold uppercase text-zinc-950 dark:text-white leading-tight">
                               {item.title}
                             </h4>
                             <p className="text-[10px] text-zinc-500 font-sans leading-tight mt-0.5">

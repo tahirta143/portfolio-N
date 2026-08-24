@@ -10,7 +10,7 @@
   --card: rgba(255, 255, 255, 0.75);
   --card-foreground: #1c1c1a;
   --border: rgba(10, 102, 194, 0.2);
-  --font-oswald: 'Oswald', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
 }
 
 html.dark {
@@ -26,8 +26,8 @@ html.dark {
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-oswald);
-  --font-oswald: var(--font-oswald);
+  --font-sans: var(--font-poppins);
+  --font-poppins: var(--font-poppins);
 }
 
 * {
@@ -61,7 +61,7 @@ html.dark {
 body {
   background-color: var(--background);
   color: var(--foreground);
-  font-family: var(--font-oswald), sans-serif;
+  font-family: var(--font-poppins), sans-serif;
   overflow-x: hidden;
   letter-spacing: 0.02em;
   transition: background-color 0.3s ease, color 0.3s ease;
