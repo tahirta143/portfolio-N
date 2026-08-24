@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { ScrollableCardStack } from "./ui/scrollable-card-stack";
 import { Badge } from "./ui/badge";
 import { FadeUp, StaggerContainer, motionItem } from "./ui/motion";
@@ -81,6 +81,18 @@ const experiences = [
 
 export function ExperienceSection() {
   const [viewMode, setViewMode] = useState("stack");
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 767px)");
+    const update = () => {
+      setIsMobile(mq.matches);
+      if (mq.matches) setViewMode("grid");
+    };
+    update();
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
+  }, []);
 
   return (
     <section

@@ -55,7 +55,7 @@ export function HeroSection() {
           {/* Headline with Mask Reveal Text Animations */}
           <div className="space-y-2">
             <motion.div variants={lineVariants} initial="hidden" animate="visible">
-              <h1 className="text-3xl sm:text-6xl md:text-7xl font-bold uppercase tracking-tight text-white leading-none font-sans">
+              <h1 className="text-3xl sm:text-6xl md:text-7xl font-bold uppercase tracking-tight text-white leading-none font-poppins">
                 Turn More Leads Into
               </h1>
             </motion.div>
@@ -66,7 +66,7 @@ export function HeroSection() {
               animate="visible"
               transition={{ delay: 0.15 }}
             >
-              <h1 className="text-3xl sm:text-6xl md:text-7xl font-bold uppercase tracking-tight text-white leading-none font-sans">
+              <h1 className="text-3xl sm:text-6xl md:text-7xl font-bold uppercase tracking-tight text-white leading-none font-poppins">
                 Customers{" "}
                 <span className="underline decoration-[#0A66C2] underline-offset-8 text-[#0A66C2]">
                   Automatically
