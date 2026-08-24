@@ -182,7 +182,7 @@ export function ServicesSection() {
 
                   <div className="pt-6 mt-6 border-t border-[#0A66C2]/15 flex items-center justify-between text-xs text-zinc-500 uppercase tracking-widest">
                     <span>SERVICE SPEC 0{index + 1}</span>
-                    <span className="text-[#0A66C2] font-bold group-hover:translate-x-1 transition-transform">Inquire →</span>
+                    <a href="#contact" className="text-[#0A66C2] font-bold group-hover:translate-x-1 transition-transform cursor-pointer">Inquire →</a>
                   </div>
                 </GlowHoverCard>
               </motion.div>

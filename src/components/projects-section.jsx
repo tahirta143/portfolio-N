@@ -184,7 +184,7 @@ export function ProjectsSection() {
               />
             </div>
 
-            <div className="relative flex flex-col p-6 md:p-10">
+            <div className="relative flex flex-col p-6 md:p-10 gap-6">
               <button
                 type="button"
                 onClick={() => setSelectedProject(null)}
@@ -194,17 +194,17 @@ export function ProjectsSection() {
                 <X className="h-5 w-5" />
               </button>
 
-              <span className="mb-4 self-start rounded-full bg-[#0A66C2] px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-white">
+              <span className="self-start rounded-full bg-[#0A66C2] px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-white">
                 {selectedProject.category}
               </span>
               <h3 id="project-dialog-title" className="pr-8 text-2xl font-bold uppercase leading-tight text-zinc-950 dark:text-white md:text-4xl">
                 {selectedProject.title}
               </h3>
-              <p className="mt-6 text-sm leading-7 text-zinc-600 dark:text-zinc-300">
+              <p className="text-sm leading-7 text-zinc-600 dark:text-zinc-300">
                 {selectedProject.description}
               </p>
 
-              <div className="mt-8 border-t border-zinc-200 pt-6 dark:border-zinc-800">
+              <div className="border-t border-zinc-200 pt-6 dark:border-zinc-800">
                 <h4 className="text-xs font-bold uppercase tracking-widest text-[#0A66C2]">
                   Project Details
                 </h4>
@@ -221,7 +221,7 @@ export function ProjectsSection() {
               </div>
 
               {selectedProject.url && (
-                <a href={selectedProject.url} target="_blank" rel="noopener noreferrer" className="mt-6 text-sm font-bold text-[#0A66C2] underline underline-offset-4 hover:text-black dark:hover:text-white">
+                <a href={selectedProject.url} target="_blank" rel="noopener noreferrer" className="text-sm font-bold text-[#0A66C2] underline underline-offset-4 hover:text-black dark:hover:text-white">
                   Visit live project
                 </a>
               )}

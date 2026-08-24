@@ -44,9 +44,9 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <div className="inline-flex items-center gap-2 px-5 py-2 border border-[#0A66C2] bg-[#0A66C2] text-white rounded-full">
-              <span className="h-2 w-2 rounded-full bg-white animate-pulse" />
-              <span className="text-xs uppercase tracking-widest font-bold">
+            <div className="inline-flex items-center gap-2 px-3 sm:px-5 py-2 border border-[#0A66C2] bg-[#0A66C2] text-white rounded-full">
+              <span className="h-2 w-2 rounded-full bg-white animate-pulse shrink-0" />
+              <span className="text-[9px] sm:text-xs uppercase tracking-widest font-bold whitespace-nowrap">
                 GoHighLevel Expert &amp; Automation Specialist
               </span>
             </div>
@@ -90,7 +90,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.6 }}
-            className="flex flex-wrap items-center justify-center gap-4 pt-4"
+            className="flex flex-wrap items-center justify-center gap-4 pt-4 pb-16"
           >
             <a href="#contact">
               <Button size="lg" className="gap-3">
@@ -113,7 +113,7 @@ export function HeroSection() {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.8, duration: 0.8 }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10"
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 hidden sm:flex flex-col items-center"
       >
         <a href="#about" className="flex flex-col items-center gap-2 group">
           <span className="text-[10px] uppercase tracking-widest text-[#0A66C2] font-bold">

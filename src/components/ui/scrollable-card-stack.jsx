@@ -262,7 +262,7 @@ export function ScrollableCardStack({
                           <div className="h-9 w-9 border border-[#0A66C2] bg-[#0A66C2] text-white flex items-center justify-center rounded-full">
                             <Briefcase className="h-4 w-4" />
                           </div>
-                          <h3 className="text-2xl md:text-3xl font-extrabold uppercase tracking-wider text-zinc-950 dark:text-white">
+                          <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold uppercase tracking-wider text-zinc-950 dark:text-white">
                             {item.role}
                           </h3>
                         </div>
@@ -276,9 +276,14 @@ export function ScrollableCardStack({
                         </div>
                       </div>
 
-                      <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#0A66C2] text-white text-xs font-bold uppercase tracking-widest rounded-full self-start sm:self-center shadow-sm">
-                        <Calendar className="h-3.5 w-3.5" />
-                        <span>{item.period}</span>
+                      <div className="flex items-center gap-3 self-start">
+                        <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#0A66C2] text-white text-xs font-bold uppercase tracking-widest rounded-full shadow-sm">
+                          <Calendar className="h-3.5 w-3.5" />
+                          <span>{item.period}</span>
+                        </div>
+                        <div className="text-[10px] sm:text-xs font-mono font-bold text-[#0A66C2] uppercase tracking-widest bg-[#0A66C2]/10 px-3 py-1 rounded-full border border-[#0A66C2]/30 whitespace-nowrap">
+                          0{index + 1} / 0{items.length}
+                        </div>
                       </div>
                     </div>
 
@@ -306,10 +311,6 @@ export function ScrollableCardStack({
                         ))}
                       </div>
                     )}
-
-                    <div className="absolute top-6 right-6 text-xs font-mono font-bold text-[#0A66C2] uppercase tracking-widest bg-[#0A66C2]/10 px-3 py-1 rounded-full border border-[#0A66C2]/30">
-                      0{index + 1} / 0{items.length}
-                    </div>
                   </div>
                 );
               })}
