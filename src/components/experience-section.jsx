@@ -119,7 +119,7 @@ export function ExperienceSection() {
             <div className="h-1 w-24 bg-[#0A66C2] mt-4 rounded-full" />
           </div>
 
-          <div className="ios-segmented-control flex items-center">
+          <div className="ios-segmented-control hidden md:flex items-center">
             <button
               onClick={() => setViewMode("stack")}
               className={`px-5 py-2 text-xs font-bold uppercase tracking-wider transition-all duration-300 cursor-pointer rounded-full ${
